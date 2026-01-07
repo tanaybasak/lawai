@@ -37,10 +37,10 @@ function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
-    // Load chats from localStorage and check API health
-    const { chats: loadedChats, activeChatId: loadedActiveChatId } = loadChatsFromStorage();
-    setChats(loadedChats);
-    setActiveChatId(loadedActiveChatId);
+    // Always start with a new chat on refresh
+    const newChat = createNewChat();
+    setChats({ [newChat.id]: newChat });
+    setActiveChatId(newChat.id);
     checkAPIHealth();
   }, []);
 
