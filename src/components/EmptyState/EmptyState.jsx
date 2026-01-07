@@ -28,30 +28,30 @@ const EmptyState = ({ onSubmit }) => {
   };
 
   return (
-    <div className={styles['empty-state']}>
+    <div className={styles.emptyState}>
       <h1 className={styles.greeting}>{t('empty_state.title')} ✨</h1>
       <p className={styles.subtext}>
         {t('empty_state.subtitle')}
       </p>
       
-      <div className={styles['input-container']}>
+      <div className={styles.inputContainer}>
         <form onSubmit={handleSubmit}>
-          <div className={styles['input-wrapper']}>
+          <div className={styles.inputWrapper}>
             <input
               type="text"
-              className={styles['input-field']}
+              className={styles.inputField}
               placeholder="Ask me anything"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
             />
-            <div className={styles['input-icons']}>
-              <button type="button" className={styles['input-button']}>
+            <div className={styles.inputIcons}>
+              <button type="button" className={styles.inputButton}>
                 <FontAwesomeIcon icon={faPaperclip} />
               </button>
-              <button type="button" className={styles['input-button']}>
+              <button type="button" className={styles.inputButton}>
                 <FontAwesomeIcon icon={faGear} /> <span>Tools</span>
               </button>
-              <button type="submit" className={styles['submit-button']}>
+              <button type="submit" className={styles.submitButton}>
                 <FontAwesomeIcon icon={faArrowRight} />
               </button>
             </div>
@@ -59,19 +59,19 @@ const EmptyState = ({ onSubmit }) => {
         </form>
       </div>
 
-      <div className={styles['use-cases-section']}>
-        <p className={styles['use-cases-title']}>{t('empty_state.use_cases')}</p>
-        <div className={styles['use-cases-grid']}>
+      <div className={styles.useCasesSection}>
+        <p className={styles.useCasesTitle}>{t('empty_state.use_cases')}</p>
+        <div className={styles.useCasesGrid}>
           {useCases.map((useCase, index) => (
             <div
               key={index}
-              className={styles['use-case-card']}
+              className={styles.useCaseCard}
               onClick={() => handleUseCaseClick(useCase.text)}
             >
-              <div className={styles['use-case-icon']} style={{ color: useCase.color }}>
+              <div className={styles.useCaseIcon} style={{ color: useCase.color }}>
                 {useCase.icon}
               </div>
-              <p className={styles['use-case-text']}>{useCase.text}</p>
+              <p className={styles.useCaseText}>{useCase.text}</p>
             </div>
           ))}
         </div>

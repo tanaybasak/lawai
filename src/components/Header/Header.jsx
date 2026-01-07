@@ -5,13 +5,13 @@ import styles from './Header.module.scss';
 const Header = ({ title, onMenuClick, onNewChat }) => {
   return (
     <header className={styles.header}>
-      <div className={styles['header-left']}>
-        <button className={styles['menu-icon']} aria-label="Menu" onClick={onMenuClick}>☰</button>
+      <div className={styles.headerLeft}>
+        <button className={styles.menuIcon} aria-label="Menu" onClick={onMenuClick}>☰</button>
         <h1 className={styles.title}>{title}</h1>
       </div>
-      <div className={styles['header-right']}>
+      <div className={styles.headerRight}>
         {/* <ThemeToggle /> */}
-        <button className={styles['compose-icon']} aria-label="New Chat" onClick={onNewChat}>✏️</button>
+        <button className={styles.composeIcon} aria-label="New Chat" onClick={onNewChat}>✏️</button>
       </div>
     </header>
   );

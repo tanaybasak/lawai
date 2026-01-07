@@ -46,18 +46,18 @@ const Sidebar = ({ chats, activeChatId, onSelectChat, onNewChat, onDeleteChat, o
 
   return (
     <div className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
-      <div className={styles['sidebar-header']}>
-        <button className={styles['new-chat-btn']} onClick={onNewChat}>
+      <div className={styles.sidebarHeader}>
+        <button className={styles.newChatBtn} onClick={onNewChat}>
           <FontAwesomeIcon icon={faPlus} />
           <span>{t('chat.new_chat')}</span>
         </button>
       </div>
 
-      <div className={styles['chat-list']}>
+      <div className={styles.chatList}>
         {chats.length === 0 ? (
-          <div className={styles['empty-state']}>
+          <div className={styles.emptyState}>
             <p>{t('chat.no_chats')}</p>
-            <p className={styles['empty-hint']}>{t('chat.start_conversation')}</p>
+            <p className={styles.emptyHint}>{t('chat.start_conversation')}</p>
           </div>
         ) : (
           chats
@@ -65,18 +65,18 @@ const Sidebar = ({ chats, activeChatId, onSelectChat, onNewChat, onDeleteChat, o
             .map((chat) => (
             <div
               key={chat.id}
-              className={`${styles['chat-item']} ${
+              className={`${styles.chatItem} ${
                 chat.id === activeChatId ? styles.active : ''
               }`}
               onClick={() => onSelectChat(chat.id)}
             >
-              <div className={styles['chat-item-content']}>
-                <div className={styles['chat-icon']}>
+              <div className={styles.chatItemContent}>
+                <div className={styles.chatIcon}>
                   <FontAwesomeIcon icon={faMessage} />
                 </div>
-                <div className={styles['chat-details']}>
+                <div className={styles.chatDetails}>
                   {editingChatId === chat.id ? (
-                    <div className={styles['chat-title-edit']}>
+                    <div className={styles.chatTitleEdit}>
                       <input
                         type="text"
                         value={editingTitle}
@@ -86,18 +86,18 @@ const Sidebar = ({ chats, activeChatId, onSelectChat, onNewChat, onDeleteChat, o
                           if (e.key === 'Enter') handleRenameSubmit(e, chat.id);
                           if (e.key === 'Escape') handleRenameCancel(e);
                         }}
-                        className={styles['title-input']}
+                        className={styles.titleInput}
                         autoFocus
                       />
                       <button
-                        className={styles['rename-confirm-btn']}
+                        className={styles.renameConfirmBtn}
                         onClick={(e) => handleRenameSubmit(e, chat.id)}
                         title="Save"
                       >
                         <FontAwesomeIcon icon={faCheck} />
                       </button>
                       <button
-                        className={styles['rename-cancel-btn']}
+                        className={styles.renameCancelBtn}
                         onClick={handleRenameCancel}
                         title="Cancel"
                       >
@@ -105,28 +105,28 @@ const Sidebar = ({ chats, activeChatId, onSelectChat, onNewChat, onDeleteChat, o
                       </button>
                     </div>
                   ) : (
-                    <div className={styles['chat-title']}>{chat.title}</div>
+                    <div className={styles.chatTitle}>{chat.title}</div>
                   )}
-                  <div className={styles['chat-preview']}>
+                  <div className={styles.chatPreview}>
                     {chat.messages.length > 0
                       ? chat.messages[0].message.substring(0, 50) + '...'
                       : t('chat.no_messages')}
                   </div>
-                  <div className={styles['chat-meta']}>
-                    <span className={styles['chat-date']}>
+                  <div className={styles.chatMeta}>
+                    <span className={styles.chatDate}>
                       {formatChatDate(chat.updatedAt)}
                     </span>
                     {chat.messages.length > 0 && (
-                      <span className={styles['message-count']}>
+                      <span className={styles.messageCount}>
                         {chat.messages.length} {t('chat.messages', { count: chat.messages.length })}
                       </span>
                     )}
                   </div>
                 </div>
-                <div className={styles['chat-actions']}>
+                <div className={styles.chatActions}>
                   {editingChatId !== chat.id && (
                     <button
-                      className={styles['rename-btn']}
+                      className={styles.renameBtn}
                       onClick={(e) => handleRenameClick(e, chat)}
                       title="Rename chat"
                     >
@@ -135,7 +135,7 @@ const Sidebar = ({ chats, activeChatId, onSelectChat, onNewChat, onDeleteChat, o
                   )}
                   {chats.filter(c => c.messages.length > 0).length > 1 && editingChatId !== chat.id && (
                     <button
-                      className={`${styles['delete-btn']} ${
+                      className={`${styles.deleteBtn} ${
                         deleteConfirm === chat.id ? styles.confirm : ''
                       }`}
                       onClick={(e) => handleDeleteClick(e, chat.id)}
@@ -151,8 +151,8 @@ const Sidebar = ({ chats, activeChatId, onSelectChat, onNewChat, onDeleteChat, o
         )}
       </div>
 
-      <div className={styles['sidebar-footer']}>
-        <div className={styles['chat-count']}>
+      <div className={styles.sidebarFooter}>
+        <div className={styles.chatCount}>
           {chats.length} {t('chat.chats', { count: chats.length })}
         </div>
       </div>

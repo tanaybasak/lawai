@@ -16,16 +16,16 @@ const AgentMessage = ({ agentName, message, agentType, isTyping }) => {
   };
 
   return (
-    <div className={styles['agent-message']}>
-      <div className={`${styles['agent-avatar']} ${styles[agentType]}`}>
+    <div className={styles.agentMessage}>
+      <div className={`${styles.agentAvatar} ${styles[agentType]}`}>
         {getAgentIcon(agentType)}
       </div>
-      <div className={styles['agent-content']}>
-        <p className={styles['agent-name']}>{agentName}</p>
+      <div className={styles.agentContent}>
+        <p className={styles.agentName}>{agentName}</p>
         {isTyping ? (
-          <p className={styles['agent-typing']}>is working on ideas...</p>
+          <p className={styles.agentTyping}>is working on ideas...</p>
         ) : (
-          <div className={styles['agent-text']}>
+          <div className={styles.agentText}>
             <ReactMarkdown 
               remarkPlugins={[remarkGfm]}
               components={{

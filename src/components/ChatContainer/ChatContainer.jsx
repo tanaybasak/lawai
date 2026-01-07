@@ -5,8 +5,8 @@ import MessageBubble from '../MessageBubble/MessageBubble';
 
 const ChatContainer = ({ messages, isLoading }) => {
   return (
-    <div className={styles['chat-container']}>
-      <div className={styles['messages-list']}>
+    <div className={styles.chatContainer}>
+      <div className={styles.messagesList}>
         {messages.map((msg, index) => {
           if (msg.type === 'agent') {
             return (
