@@ -25,7 +25,10 @@ class Settings(BaseSettings):
     RELOAD: bool = True
 
     # CORS
-    ALLOWED_ORIGINS: List[str] = ["http://localhost:3000"]
+    ALLOWED_ORIGINS: List[str] = [
+        "http://localhost:3000",
+        "https://jolly-taiyaki-40208d.netlify.app"
+    ]
 
     # OpenAI
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")

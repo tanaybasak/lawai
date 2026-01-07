@@ -86,3 +86,6 @@ vector_store/
 *.tmp
 *.temp
 .~lock.*
+
+# Local Netlify folder
+.netlify
