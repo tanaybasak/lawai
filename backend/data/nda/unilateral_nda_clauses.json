@@ -1,0 +1,823 @@
+[
+  {
+    "clause_id": "NDA-UNI-DEF-001",
+    "clause_type": "Definition",
+    "category": "Definitions",
+    "title": "Confidential Information - Unilateral Definition",
+    "legal_intent": "Establish scope of protected information disclosed by one party only",
+    "is_mandatory": true,
+    "clause_text": "\"Confidential Information\" means any and all information, whether written, oral, electronic, or visual, disclosed by Company (the \"Disclosing Party\") to Recipient (the \"Receiving Party\") that is designated as confidential or that reasonably should be understood to be confidential given the nature of the information and the circumstances of disclosure.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-DEF-001-V1",
+        "intent": "Comprehensive enumeration with broad coverage",
+        "style": "Detailed",
+        "text": "\"Confidential Information\" means all information disclosed by Company to Recipient, including but not limited to technical data, trade secrets, know-how, research, product plans, products, services, customers, customer lists, markets, software, developments, inventions, processes, formulas, technology, designs, drawings, engineering, hardware configuration, marketing, finances, business strategies, or other proprietary information."
+      },
+      {
+        "variant_id": "NDA-UNI-DEF-001-V2",
+        "intent": "Include derivative information",
+        "style": "Comprehensive",
+        "text": "\"Confidential Information\" means all information disclosed by Company, as well as all analyses, compilations, studies, or other documents prepared by Recipient that contain, reflect, or are based upon, in whole or in part, any such information."
+      },
+      {
+        "variant_id": "NDA-UNI-DEF-001-V3",
+        "intent": "Pre-marking requirement",
+        "style": "Restrictive",
+        "text": "\"Confidential Information\" means information disclosed by Company that is marked \"Confidential,\" \"Proprietary,\" or with a similar designation at the time of disclosure, or if disclosed orally, is identified as confidential at the time of disclosure and confirmed in writing within thirty (30) days."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["definition", "confidential information", "unilateral", "one-way"],
+    "risk_level": "High",
+    "negotiation_notes": "In unilateral NDAs, only one party discloses. Recipient should negotiate for narrow definition. Disclosing party prefers broad definition. Consider marking requirements to limit scope.",
+    "related_clauses": ["NDA-UNI-EXC-001", "NDA-UNI-OBL-001"]
+  },
+  {
+    "clause_id": "NDA-UNI-DEF-002",
+    "clause_type": "Definition",
+    "category": "Definitions",
+    "title": "Disclosing Party - Company",
+    "legal_intent": "Identify the party disclosing confidential information",
+    "is_mandatory": true,
+    "clause_text": "\"Disclosing Party\" or \"Company\" means [COMPANY_NAME], the party disclosing Confidential Information under this Agreement.",
+    "variants": [],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["definition", "party", "disclosure"],
+    "risk_level": "Low",
+    "negotiation_notes": "Standard definition. Identify company clearly in agreement header.",
+    "related_clauses": ["NDA-UNI-DEF-001", "NDA-UNI-DEF-003"]
+  },
+  {
+    "clause_id": "NDA-UNI-DEF-003",
+    "clause_type": "Definition",
+    "category": "Definitions",
+    "title": "Receiving Party - Recipient",
+    "legal_intent": "Identify the party receiving confidential information",
+    "is_mandatory": true,
+    "clause_text": "\"Receiving Party\" or \"Recipient\" means [RECIPIENT_NAME], the party receiving Confidential Information from Company under this Agreement.",
+    "variants": [],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["definition", "party", "receipt"],
+    "risk_level": "Low",
+    "negotiation_notes": "Standard definition. Identify recipient clearly in agreement header.",
+    "related_clauses": ["NDA-UNI-DEF-001", "NDA-UNI-DEF-002"]
+  },
+  {
+    "clause_id": "NDA-UNI-DEF-004",
+    "clause_type": "Definition",
+    "category": "Definitions",
+    "title": "Purpose Definition",
+    "legal_intent": "Define permitted use of confidential information",
+    "is_mandatory": true,
+    "clause_text": "\"Purpose\" means the evaluation of a potential business relationship between the parties, specifically [PURPOSE_DESCRIPTION].",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-DEF-004-V1",
+        "intent": "Broad purpose for flexibility",
+        "style": "General",
+        "text": "\"Purpose\" means evaluating, discussing, and potentially entering into a business relationship between Company and Recipient."
+      },
+      {
+        "variant_id": "NDA-UNI-DEF-004-V2",
+        "intent": "Narrow specific purpose",
+        "style": "Restrictive",
+        "text": "\"Purpose\" means solely for Recipient's evaluation of whether to [SPECIFIC_TRANSACTION] and for no other purpose."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["definition", "purpose", "permitted use"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Be specific about purpose. Vague purposes lead to disputes. Recipient wants broad; discloser wants narrow.",
+    "related_clauses": ["NDA-UNI-OBL-003"]
+  },
+  {
+    "clause_id": "NDA-UNI-EXC-001",
+    "clause_type": "Exception",
+    "category": "Exclusions",
+    "title": "Standard Exclusions - Comprehensive",
+    "legal_intent": "Define what information is NOT confidential",
+    "is_mandatory": true,
+    "clause_text": "Confidential Information does not include information that: (a) is or becomes publicly available through no breach of this Agreement by Recipient; (b) was rightfully in Recipient's possession prior to disclosure by Company, as evidenced by Recipient's written records; (c) is rightfully received by Recipient from a third party without breach of any confidentiality obligation; (d) is independently developed by Recipient without use of or reference to the Confidential Information, as evidenced by written records; or (e) is required to be disclosed by law or court order, provided Recipient gives Company prompt notice and cooperates in seeking a protective order.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-EXC-001-V1",
+        "intent": "Add burden of proof requirement",
+        "style": "Strict",
+        "text": "Confidential Information excludes only information that Recipient can demonstrate through clear and convincing documentary evidence was: (a) publicly known at the time of disclosure; (b) already in Recipient's possession without restriction; (c) received from a third party with a lawful right to disclose; or (d) independently developed without access to Confidential Information."
+      },
+      {
+        "variant_id": "NDA-UNI-EXC-001-V2",
+        "intent": "Combination exception - partial public knowledge",
+        "style": "Nuanced",
+        "text": "Information shall not be deemed Confidential Information merely because individual components are in the public domain, unless the combination of such components is itself not publicly known."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["exclusions", "exceptions", "carve-outs", "public domain"],
+    "risk_level": "Critical",
+    "negotiation_notes": "Critical provision. Company wants narrow exceptions; Recipient wants broad. Burden of proof typically on Recipient. Consider documentation requirements.",
+    "related_clauses": ["NDA-UNI-DEF-001", "NDA-UNI-DISC-001"]
+  },
+  {
+    "clause_id": "NDA-UNI-OBL-001",
+    "clause_type": "Obligation",
+    "category": "Obligations",
+    "title": "Duty to Maintain Confidentiality",
+    "legal_intent": "Impose obligation to protect confidential information",
+    "is_mandatory": true,
+    "clause_text": "Recipient agrees to hold and maintain the Confidential Information in strict confidence, to protect the Confidential Information using the same degree of care that it uses to protect its own confidential information of a similar nature, but in no event less than reasonable care, and not to disclose the Confidential Information to any third parties.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-OBL-001-V1",
+        "intent": "Highest standard of care",
+        "style": "Strict",
+        "text": "Recipient shall maintain the Confidential Information in strictest confidence and shall use its best efforts and highest degree of care to prevent unauthorized use, dissemination, or publication of the Confidential Information."
+      },
+      {
+        "variant_id": "NDA-UNI-OBL-001-V2",
+        "intent": "Specific security measures",
+        "style": "Detailed",
+        "text": "Recipient shall protect Confidential Information by using reasonable security measures, including encryption for electronic data, secure storage for physical documents, and limiting access to authorized personnel only on a need-to-know basis."
+      },
+      {
+        "variant_id": "NDA-UNI-OBL-001-V3",
+        "intent": "Simple reasonable care standard",
+        "style": "Balanced",
+        "text": "Recipient agrees to use reasonable care to protect the confidentiality of the Confidential Information and prevent its unauthorized disclosure or use."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["obligation", "confidentiality", "standard of care", "protection"],
+    "risk_level": "Critical",
+    "negotiation_notes": "Core obligation. 'Reasonable care' is standard. 'Same degree of care' gives flexibility. 'Best efforts' is most onerous. Consider if specific security measures needed.",
+    "related_clauses": ["NDA-UNI-DEF-001", "NDA-UNI-OBL-002"]
+  },
+  {
+    "clause_id": "NDA-UNI-OBL-002",
+    "clause_type": "Obligation",
+    "category": "Obligations",
+    "title": "Limited Internal Disclosure",
+    "legal_intent": "Restrict disclosure to need-to-know recipients only",
+    "is_mandatory": true,
+    "clause_text": "Recipient may disclose Confidential Information only to its employees, officers, directors, advisors, and consultants (collectively, \"Representatives\") who have a legitimate need to know such information for the Purpose and who have been informed of the confidential nature of the information and are bound by confidentiality obligations at least as restrictive as those contained herein.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-OBL-002-V1",
+        "intent": "Require written agreements from recipients",
+        "style": "Strict",
+        "text": "Recipient shall disclose Confidential Information only to those of its employees and advisors who need to know such information for the Purpose and who have signed written confidentiality agreements with terms no less restrictive than this Agreement. Recipient shall be responsible for any breach by its Representatives."
+      },
+      {
+        "variant_id": "NDA-UNI-OBL-002-V2",
+        "intent": "Include affiliates and controlled entities",
+        "style": "Expanded",
+        "text": "Recipient may share Confidential Information with its affiliates, subsidiaries, employees, officers, directors, and professional advisors who need to know for the Purpose, provided such persons are informed of the confidential nature and either bound by professional obligations or written agreements of confidentiality."
+      },
+      {
+        "variant_id": "NDA-UNI-OBL-002-V3",
+        "intent": "Responsibility for representatives",
+        "style": "Accountability-Focused",
+        "text": "Recipient may disclose to Representatives on a need-to-know basis only. Recipient shall be fully responsible and liable for any breach of this Agreement by any of its Representatives, as if such breach were committed by Recipient itself."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["obligation", "internal disclosure", "representatives", "need-to-know"],
+    "risk_level": "High",
+    "negotiation_notes": "Define 'Representatives' carefully. Consider if affiliates included. Decide if written agreements required for all recipients. Liability for representatives' breaches is key.",
+    "related_clauses": ["NDA-UNI-OBL-001", "NDA-UNI-REM-001"]
+  },
+  {
+    "clause_id": "NDA-UNI-OBL-003",
+    "clause_type": "Obligation",
+    "category": "Obligations",
+    "title": "Purpose Limitation",
+    "legal_intent": "Restrict use of confidential information to defined purpose only",
+    "is_mandatory": true,
+    "clause_text": "Recipient agrees to use the Confidential Information solely for the Purpose and not for any other purpose, including without limitation, for Recipient's own commercial benefit or to compete with Company.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-OBL-003-V1",
+        "intent": "Explicit non-compete language",
+        "style": "Protective",
+        "text": "Recipient shall use Confidential Information exclusively for the Purpose. Recipient shall not use Confidential Information to develop, manufacture, or market competing products or services, or to otherwise compete with Company's business."
+      },
+      {
+        "variant_id": "NDA-UNI-OBL-003-V2",
+        "intent": "Require consent for other uses",
+        "style": "Restrictive",
+        "text": "The Confidential Information shall be used solely and exclusively for the Purpose. Any other use requires Company's prior written consent."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["obligation", "purpose limitation", "use restriction", "non-compete"],
+    "risk_level": "High",
+    "negotiation_notes": "Link to Purpose definition. Recipient should ensure Purpose is broadly defined. Explicit non-compete may be controversial.",
+    "related_clauses": ["NDA-UNI-DEF-004", "NDA-UNI-OBL-001"]
+  },
+  {
+    "clause_id": "NDA-UNI-OBL-004",
+    "clause_type": "Obligation",
+    "category": "Obligations",
+    "title": "No Copying or Reverse Engineering",
+    "legal_intent": "Prohibit reproduction and reverse engineering of confidential materials",
+    "is_mandatory": false,
+    "clause_text": "Recipient shall not copy, reproduce, or reverse engineer any Confidential Information without Company's prior written consent, except to the extent reasonably necessary for the Purpose.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-OBL-004-V1",
+        "intent": "Absolute prohibition",
+        "style": "Strict",
+        "text": "Recipient shall not, without Company's express written permission, copy, photograph, reproduce, distribute, disclose, or reverse engineer any Confidential Information or any portion thereof."
+      },
+      {
+        "variant_id": "NDA-UNI-OBL-004-V2",
+        "intent": "Allow necessary copies with tracking",
+        "style": "Balanced",
+        "text": "Recipient may make copies of Confidential Information only to the extent reasonably necessary for the Purpose. Recipient shall maintain a record of all copies made and shall treat all copies as Confidential Information."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate / Technology",
+    "tags": ["obligation", "copying", "reverse engineering", "reproduction"],
+    "risk_level": "High",
+    "negotiation_notes": "Important for technology and product disclosures. Recipient may need copies for evaluation. Consider if reverse engineering should be explicitly prohibited or allowed under certain conditions.",
+    "related_clauses": ["NDA-UNI-OBL-001", "NDA-UNI-OBL-005"]
+  },
+  {
+    "clause_id": "NDA-UNI-OBL-005",
+    "clause_type": "Obligation",
+    "category": "Obligations",
+    "title": "Return or Destruction",
+    "legal_intent": "Require return or destruction of materials upon termination",
+    "is_mandatory": true,
+    "clause_text": "Upon Company's written request or upon termination of this Agreement, Recipient shall promptly return to Company all documents and materials containing or representing Confidential Information and all copies thereof, or certify in writing to Company that all such materials have been destroyed.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-OBL-005-V1",
+        "intent": "Allow archival copy retention",
+        "style": "Balanced",
+        "text": "Upon termination or Company's request, Recipient shall return or destroy all Confidential Information, except that Recipient may retain one archival copy solely for the purpose of monitoring compliance with this Agreement, subject to continued confidentiality obligations."
+      },
+      {
+        "variant_id": "NDA-UNI-OBL-005-V2",
+        "intent": "Exception for backup systems",
+        "style": "Practical",
+        "text": "Recipient shall return or destroy all Confidential Information upon request or termination, except for copies retained in automatic backup systems or as required by law, which shall remain subject to confidentiality obligations."
+      },
+      {
+        "variant_id": "NDA-UNI-OBL-005-V3",
+        "intent": "Company choice with certification",
+        "style": "Formal",
+        "text": "At Company's election, Recipient shall either return all Confidential Information or destroy it and provide a written certificate of destruction signed by an authorized officer."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["obligation", "return", "destruction", "termination"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Consider practical limitations (email backups, disaster recovery). Legal hold requirements may prevent destruction. Archival copy for compliance monitoring is common.",
+    "related_clauses": ["NDA-UNI-TERM-001", "NDA-UNI-OBL-001"]
+  },
+  {
+    "clause_id": "NDA-UNI-OBL-006",
+    "clause_type": "Obligation",
+    "category": "Obligations",
+    "title": "Notification of Breach",
+    "legal_intent": "Require prompt notice of unauthorized disclosure",
+    "is_mandatory": false,
+    "clause_text": "Recipient shall promptly notify Company in writing of any unauthorized disclosure, use, or loss of Confidential Information of which Recipient becomes aware, and shall cooperate with Company in efforts to prevent further unauthorized disclosure or use.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-OBL-006-V1",
+        "intent": "Specific timeframe and remediation",
+        "style": "Detailed",
+        "text": "Recipient shall notify Company within twenty-four (24) hours of discovering any actual or suspected breach of confidentiality, and shall take all reasonable steps to mitigate the breach and prevent further disclosure."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["obligation", "breach notification", "incident response"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Important for early breach detection. Consider reasonable timeframe for notification. Cooperation in remediation is standard.",
+    "related_clauses": ["NDA-UNI-OBL-001", "NDA-UNI-REM-001"]
+  },
+  {
+    "clause_id": "NDA-UNI-DISC-001",
+    "clause_type": "Conditional",
+    "category": "Permitted Disclosures",
+    "title": "Legally Compelled Disclosure",
+    "legal_intent": "Allow disclosure when legally required while protecting disclosing party",
+    "is_mandatory": true,
+    "clause_text": "If Recipient is legally compelled to disclose any Confidential Information, Recipient shall provide Company with prompt written notice of such requirement so that Company may seek a protective order or other appropriate remedy. If such protective order is not obtained, Recipient shall disclose only that portion of the Confidential Information which is legally required and shall exercise reasonable efforts to obtain assurances that confidential treatment will be accorded to the disclosed information.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-DISC-001-V1",
+        "intent": "Specify notice timeframe and cooperation",
+        "style": "Detailed",
+        "text": "In the event Recipient receives a subpoena, court order, or other legal process requiring disclosure of Confidential Information, Recipient shall: (a) immediately notify Company (within 48 hours if possible); (b) cooperate with Company in seeking a protective order at Company's expense; (c) disclose only the minimum information legally required; and (d) request confidential treatment for any disclosed information."
+      },
+      {
+        "variant_id": "NDA-UNI-DISC-001-V2",
+        "intent": "Exception when notice prohibited",
+        "style": "Practical",
+        "text": "Recipient shall provide Company with advance notice of compelled disclosure unless prohibited by law. Recipient shall cooperate with Company's efforts to obtain a protective order and shall disclose only what is legally required."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["compelled disclosure", "subpoena", "protective order", "legal requirement"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Balance legal compliance with protection of Company's interests. Notice requirement may conflict with law (e.g., government investigations). Consider who pays for protective order.",
+    "related_clauses": ["NDA-UNI-EXC-001", "NDA-UNI-OBL-001"]
+  },
+  {
+    "clause_id": "NDA-UNI-TERM-001",
+    "clause_type": "Obligation",
+    "category": "Term and Termination",
+    "title": "Agreement Duration",
+    "legal_intent": "Define how long the agreement remains in effect",
+    "is_mandatory": true,
+    "clause_text": "This Agreement shall commence on the Effective Date and shall continue for a period of two (2) years, unless earlier terminated by either party upon thirty (30) days' prior written notice to the other party.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-TERM-001-V1",
+        "intent": "Disclosing party control",
+        "style": "Protective",
+        "text": "This Agreement shall continue until terminated by Company upon written notice to Recipient. Recipient may not terminate this Agreement without Company's consent."
+      },
+      {
+        "variant_id": "NDA-UNI-TERM-001-V2",
+        "intent": "Transaction-based term",
+        "style": "Event-Driven",
+        "text": "This Agreement shall remain in effect until the earlier of: (a) completion or abandonment of the proposed transaction; (b) three (3) years from the Effective Date; or (c) termination by either party upon sixty (60) days' written notice."
+      },
+      {
+        "variant_id": "NDA-UNI-TERM-001-V3",
+        "intent": "No fixed term",
+        "style": "Indefinite",
+        "text": "This Agreement shall continue in effect until terminated by either party upon ninety (90) days' prior written notice."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["term", "duration", "termination", "effective period"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Common terms: 1-3 years for evaluations, 5+ years for technology. Distinguish agreement term from confidentiality obligation survival. Recipient wants shorter term; Company wants longer or indefinite.",
+    "related_clauses": ["NDA-UNI-TERM-002", "NDA-UNI-OBL-005"]
+  },
+  {
+    "clause_id": "NDA-UNI-TERM-002",
+    "clause_type": "Obligation",
+    "category": "Term and Termination",
+    "title": "Survival of Obligations",
+    "legal_intent": "Ensure confidentiality continues after agreement termination",
+    "is_mandatory": true,
+    "clause_text": "The obligations of Recipient under this Agreement with respect to Confidential Information shall survive termination of this Agreement and shall continue for a period of five (5) years from the date of disclosure of such Confidential Information, except that obligations with respect to trade secrets shall continue for as long as such information remains a trade secret under applicable law.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-TERM-002-V1",
+        "intent": "Perpetual for all confidential information",
+        "style": "Maximum Protection",
+        "text": "All confidentiality obligations shall survive termination of this Agreement and continue in perpetuity."
+      },
+      {
+        "variant_id": "NDA-UNI-TERM-002-V2",
+        "intent": "Tiered survival periods",
+        "style": "Nuanced",
+        "text": "Confidentiality obligations shall survive termination as follows: (a) trade secrets - indefinitely; (b) technical and proprietary information - seven (7) years; (c) other Confidential Information - three (3) years from date of disclosure."
+      },
+      {
+        "variant_id": "NDA-UNI-TERM-002-V3",
+        "intent": "Shorter survival period",
+        "style": "Recipient-Friendly",
+        "text": "Obligations shall survive termination and continue for three (3) years from the date of termination of this Agreement."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["survival", "post-termination", "trade secrets", "duration"],
+    "risk_level": "High",
+    "negotiation_notes": "Critical provision. Trade secrets should have indefinite protection. Other info: 3-7 years typical. Recipient wants shorter; Company wants longer. Consider statute of limitations.",
+    "related_clauses": ["NDA-UNI-TERM-001", "NDA-UNI-DEF-001"]
+  },
+  {
+    "clause_id": "NDA-UNI-REM-001",
+    "clause_type": "Remedy",
+    "category": "Remedies",
+    "title": "Equitable Relief",
+    "legal_intent": "Establish right to injunctive relief for breach",
+    "is_mandatory": true,
+    "clause_text": "Recipient acknowledges that the Confidential Information is unique and valuable, and that disclosure in breach of this Agreement would cause irreparable harm to Company for which monetary damages would be an inadequate remedy. Accordingly, Company shall be entitled to seek equitable relief, including injunction and specific performance, in addition to all other remedies available at law or in equity, without the necessity of proving actual damages or posting a bond.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-REM-001-V1",
+        "intent": "Include monetary damages explicitly",
+        "style": "Comprehensive",
+        "text": "Recipient agrees that breach of this Agreement will cause irreparable harm to Company. Company shall be entitled to seek injunctive relief, specific performance, and monetary damages, including consequential damages, without posting bond and without proving actual damages."
+      },
+      {
+        "variant_id": "NDA-UNI-REM-001-V2",
+        "intent": "Cumulative remedies",
+        "style": "Protective",
+        "text": "Company's rights and remedies under this Agreement are cumulative and in addition to any other rights and remedies Company may have at law or in equity. Company may seek equitable relief without waiving its right to seek damages."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["remedies", "injunction", "equitable relief", "irreparable harm"],
+    "risk_level": "High",
+    "negotiation_notes": "Standard provision for NDAs. Bond waiver may not be enforceable everywhere. Recipient should ensure this doesn't waive defenses or create presumption of breach.",
+    "related_clauses": ["NDA-UNI-OBL-001", "NDA-UNI-REM-002"]
+  },
+  {
+    "clause_id": "NDA-UNI-REM-002",
+    "clause_type": "Obligation",
+    "category": "Remedies",
+    "title": "Attorneys' Fees",
+    "legal_intent": "Allocate litigation costs to prevailing party",
+    "is_mandatory": false,
+    "clause_text": "In any action to enforce this Agreement, the prevailing party shall be entitled to recover its reasonable attorneys' fees and costs from the non-prevailing party.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-REM-002-V1",
+        "intent": "Company-only fee recovery",
+        "style": "One-Sided",
+        "text": "If Company prevails in any action to enforce this Agreement, Recipient shall pay Company's reasonable attorneys' fees and costs. If Recipient prevails, each party shall bear its own fees and costs."
+      }
+    ],
+    "jurisdiction": "US-MOST",
+    "practice_area": "Corporate",
+    "tags": ["attorneys' fees", "prevailing party", "costs", "litigation"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Encourages compliance. Bilateral is more fair. Unilateral (Company only) is more protective but may be resisted. Not enforceable in all jurisdictions.",
+    "related_clauses": ["NDA-UNI-REM-001", "NDA-UNI-MISC-003"]
+  },
+  {
+    "clause_id": "NDA-UNI-OWN-001",
+    "clause_type": "Obligation",
+    "category": "Ownership",
+    "title": "No Rights Granted",
+    "legal_intent": "Clarify no IP rights transferred",
+    "is_mandatory": true,
+    "clause_text": "All Confidential Information shall remain the exclusive property of Company. Nothing in this Agreement grants to Recipient any rights or licenses under any patent, copyright, trademark, trade secret, or other intellectual property right, whether by implication, estoppel, or otherwise. No rights or licenses are granted except as expressly set forth herein.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-OWN-001-V1",
+        "intent": "Explicit retention of all rights",
+        "style": "Comprehensive",
+        "text": "Company retains all right, title, and interest in and to the Confidential Information and all intellectual property rights therein. No license, express or implied, in or to any Confidential Information or intellectual property is granted to Recipient."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["ownership", "intellectual property", "no license", "rights retention"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Prevents implied license claims. Important to clarify no IP transfer. Standard protective provision for Company.",
+    "related_clauses": ["NDA-UNI-DEF-001", "NDA-UNI-OWN-002"]
+  },
+  {
+    "clause_id": "NDA-UNI-OWN-002",
+    "clause_type": "Obligation",
+    "category": "Ownership",
+    "title": "Residual Knowledge",
+    "legal_intent": "Address retention of general knowledge by recipient",
+    "is_mandatory": false,
+    "clause_text": "Notwithstanding the confidentiality obligations herein, Recipient may retain and use Residual Knowledge. 'Residual Knowledge' means information retained in the unaided memories of Recipient's Representatives who have had access to Confidential Information, provided that this exception shall not grant Recipient a license under Company's patents or copyrights, or permit Recipient to disclose or use information that is properly identified as trade secrets.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-OWN-002-V1",
+        "intent": "No residual knowledge exception",
+        "style": "Protective",
+        "text": "Recipient acknowledges that it has no right to use any Confidential Information, including any residual knowledge or information retained in memory, except as expressly permitted in this Agreement."
+      }
+    ],
+    "jurisdiction": "US-MOST",
+    "practice_area": "Corporate / Technology",
+    "tags": ["residual knowledge", "retained information", "memory", "trade secrets"],
+    "risk_level": "High",
+    "negotiation_notes": "Controversial clause. Recipients want; disclosers resist. If included, exclude trade secrets and patented inventions. Difficult to police. Consider if evaluation allows recipient to use general learnings.",
+    "related_clauses": ["NDA-UNI-OWN-001", "NDA-UNI-OBL-003"]
+  },
+  {
+    "clause_id": "NDA-UNI-OWN-003",
+    "clause_type": "Obligation",
+    "category": "Ownership",
+    "title": "No Obligation to Disclose",
+    "legal_intent": "Preserve company's discretion on what to disclose",
+    "is_mandatory": false,
+    "clause_text": "Nothing in this Agreement obligates Company to disclose any Confidential Information to Recipient. Company may, in its sole discretion, determine what information to disclose, if any.",
+    "variants": [],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["no obligation", "discretion", "disclosure control"],
+    "risk_level": "Low",
+    "negotiation_notes": "Protects Company's control over disclosures. Standard provision, usually non-controversial.",
+    "related_clauses": ["NDA-UNI-OWN-004"]
+  },
+  {
+    "clause_id": "NDA-UNI-OWN-004",
+    "clause_type": "Obligation",
+    "category": "Ownership",
+    "title": "No Obligation to Proceed",
+    "legal_intent": "Preserve freedom to terminate discussions",
+    "is_mandatory": false,
+    "clause_text": "Nothing in this Agreement obligates either party to proceed with any transaction or relationship. Either party may terminate discussions at any time, for any reason or no reason, without liability to the other party.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-OWN-004-V1",
+        "intent": "Clarify no binding commitment",
+        "style": "Explicit",
+        "text": "This Agreement does not create any obligation to enter into any further agreement or relationship. Each party retains complete discretion to terminate discussions without liability."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["no obligation", "freedom to contract", "termination rights"],
+    "risk_level": "Low",
+    "negotiation_notes": "Protects both parties' freedom not to proceed. Prevents claims of obligation to consummate transaction. Standard provision.",
+    "related_clauses": ["NDA-UNI-TERM-001", "NDA-UNI-OWN-003"]
+  },
+  {
+    "clause_id": "NDA-UNI-REP-001",
+    "clause_type": "Representation",
+    "category": "Representations",
+    "title": "No Warranty of Information",
+    "legal_intent": "Disclaim warranties about accuracy of confidential information",
+    "is_mandatory": false,
+    "clause_text": "Company makes no representation or warranty, express or implied, as to the accuracy or completeness of the Confidential Information. Company shall have no liability to Recipient resulting from Recipient's use of the Confidential Information.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-REP-001-V1",
+        "intent": "Comprehensive disclaimer",
+        "style": "Protective",
+        "text": "THE CONFIDENTIAL INFORMATION IS PROVIDED 'AS IS' WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF ACCURACY, COMPLETENESS, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. COMPANY SHALL NOT BE LIABLE FOR ANY ERRORS OR OMISSIONS IN THE CONFIDENTIAL INFORMATION."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["disclaimer", "no warranty", "as-is", "accuracy"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Protects Company from claims based on inaccurate information. Standard in preliminary discussions. Recipient should verify critical information.",
+    "related_clauses": ["NDA-UNI-MISC-002"]
+  },
+  {
+    "clause_id": "NDA-UNI-SPEC-001",
+    "clause_type": "Obligation",
+    "category": "Special Provisions",
+    "title": "Non-Solicitation of Employees",
+    "legal_intent": "Prevent poaching of company employees",
+    "is_mandatory": false,
+    "clause_text": "During the term of this Agreement and for a period of one (1) year following its termination, Recipient shall not, directly or indirectly, solicit for employment or hire any employee of Company who has been involved in the disclosure or evaluation of Confidential Information, without Company's prior written consent.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-SPEC-001-V1",
+        "intent": "Broader employee protection",
+        "style": "Restrictive",
+        "text": "Recipient agrees that during the term and for two (2) years thereafter, it will not solicit, recruit, or hire any employee or consultant of Company, except through general solicitations not specifically targeted at Company's personnel."
+      },
+      {
+        "variant_id": "NDA-UNI-SPEC-001-V2",
+        "intent": "Limited to key personnel",
+        "style": "Narrow",
+        "text": "Recipient shall not solicit or hire any senior employee or officer of Company who participated in discussions regarding the Confidential Information for a period of twelve (12) months following termination."
+      }
+    ],
+    "jurisdiction": "US-MOST",
+    "practice_area": "Corporate",
+    "tags": ["non-solicitation", "employees", "restrictive covenant", "hiring"],
+    "risk_level": "High",
+    "negotiation_notes": "Often controversial. Reasonableness varies by jurisdiction (California restricts heavily). Consider scope (all employees vs. those exposed to info), duration (6-24 months), and carve-outs for general advertising.",
+    "related_clauses": ["NDA-UNI-TERM-001"]
+  },
+  {
+    "clause_id": "NDA-UNI-SPEC-002",
+    "clause_type": "Obligation",
+    "category": "Special Provisions",
+    "title": "Standstill Provision",
+    "legal_intent": "Prevent hostile takeover attempts during evaluation period",
+    "is_mandatory": false,
+    "clause_text": "Recipient agrees that, for a period of [STANDSTILL_DURATION] months from the date of this Agreement, neither Recipient nor any of its affiliates or representatives acting on its behalf will, without Company's prior written consent, directly or indirectly: (a) acquire or offer to acquire any securities or assets of Company; (b) propose any merger, business combination, or similar transaction involving Company; (c) seek representation on Company's board of directors; or (d) publicly announce an intention to do any of the foregoing.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-SPEC-002-V1",
+        "intent": "Comprehensive standstill with proxy restrictions",
+        "style": "Protective",
+        "text": "Recipient shall not, for [STANDSTILL_DURATION] months, without Company's written consent: (a) acquire beneficial ownership of Company's securities exceeding [OWNERSHIP_THRESHOLD_PERCENTAGE]%; (b) make takeover proposals; (c) solicit proxies; (d) form alliances with other shareholders; (e) request Company to amend or waive this provision; or (f) assist others in doing any of the foregoing."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate / M&A",
+    "tags": ["standstill", "anti-takeover", "acquisition restriction", "M&A"],
+    "risk_level": "Critical",
+    "negotiation_notes": "Common in M&A due diligence. Protects company from hostile bids during evaluation. Highly negotiated. Duration typically 12-24 months. Consider exceptions (fiduciary out, company-initiated discussions). May include 'don't ask, don't waive' provision.",
+    "related_clauses": ["NDA-UNI-TERM-001", "NDA-UNI-SPEC-003"]
+  },
+  {
+    "clause_id": "NDA-UNI-SPEC-003",
+    "clause_type": "Obligation",
+    "category": "Special Provisions",
+    "title": "No Public Announcements",
+    "legal_intent": "Prevent disclosure of discussions or agreement existence",
+    "is_mandatory": false,
+    "clause_text": "Neither party shall issue any press release or make any public announcement regarding this Agreement or the discussions between the parties without the prior written consent of the other party, except as may be required by applicable law or stock exchange rules.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-SPEC-003-V1",
+        "intent": "Unilateral restriction on recipient only",
+        "style": "One-Sided",
+        "text": "Recipient shall not disclose to any third party (a) the fact that Confidential Information has been disclosed; (b) the existence of this Agreement; or (c) the fact that discussions are taking place, without Company's prior written consent."
+      },
+      {
+        "variant_id": "NDA-UNI-SPEC-003-V2",
+        "intent": "Include employee notification restrictions",
+        "style": "Comprehensive",
+        "text": "Recipient shall not disclose the existence of this Agreement, the terms hereof, or that discussions are occurring, except as required by law after notice to Company. This includes restrictions on announcements to employees not directly involved in the evaluation."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["publicity", "announcements", "disclosure", "confidentiality of negotiations"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Common for sensitive transactions. Public companies may have disclosure obligations. Consider SEC, stock exchange, and applicable law exceptions. May want to pre-approve form of any required disclosure.",
+    "related_clauses": ["NDA-UNI-OBL-001", "NDA-UNI-DISC-001"]
+  },
+  {
+    "clause_id": "NDA-UNI-MISC-001",
+    "clause_type": "Miscellaneous",
+    "category": "General Provisions",
+    "title": "Governing Law and Jurisdiction",
+    "legal_intent": "Specify applicable law and venue for disputes",
+    "is_mandatory": true,
+    "clause_text": "This Agreement shall be governed by and construed in accordance with [GOVERNING_LAW].",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-MISC-001-V1-US-CA",
+        "intent": "California governing law with state courts",
+        "style": "US-California",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflicts of law principles. Any action arising out of or relating to this Agreement shall be brought exclusively in the state or federal courts located in Santa Clara County, California, and each party hereby consents to the exclusive jurisdiction of such courts."
+      },
+      {
+        "variant_id": "NDA-UNI-MISC-001-V1-US-DE",
+        "intent": "Delaware governing law with chancery court",
+        "style": "US-Delaware",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the State of Delaware, without regard to its conflicts of law principles. Any action arising out of or relating to this Agreement shall be brought exclusively in the Court of Chancery of the State of Delaware or, if such court lacks subject matter jurisdiction, in the United States District Court for the District of Delaware, and each party hereby consents to the exclusive jurisdiction of such courts."
+      },
+      {
+        "variant_id": "NDA-UNI-MISC-001-V1-US-NY",
+        "intent": "New York governing law",
+        "style": "US-NewYork",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the State of New York, without regard to its conflicts of law principles. Any action arising out of or relating to this Agreement shall be brought exclusively in the state or federal courts located in New York County, New York, and each party hereby consents to the exclusive jurisdiction of such courts."
+      },
+      {
+        "variant_id": "NDA-UNI-MISC-001-V1-UK",
+        "intent": "English law and courts",
+        "style": "UK-England",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of England and Wales. Each party irrevocably agrees that the courts of England and Wales shall have exclusive jurisdiction to settle any dispute or claim arising out of or in connection with this Agreement or its subject matter or formation."
+      },
+      {
+        "variant_id": "NDA-UNI-MISC-001-V1-DE",
+        "intent": "German law and courts",
+        "style": "Germany",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the Federal Republic of Germany, excluding its conflict of laws rules and the United Nations Convention on Contracts for the International Sale of Goods (CISG). The exclusive place of jurisdiction for all disputes arising from or in connection with this Agreement shall be [ARBITRATION_CITY], Germany."
+      },
+      {
+        "variant_id": "NDA-UNI-MISC-001-V1-SG",
+        "intent": "Singapore law and courts",
+        "style": "Singapore",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of Singapore. Each party irrevocably submits to the exclusive jurisdiction of the courts of Singapore."
+      },
+      {
+        "variant_id": "NDA-UNI-MISC-001-V1-HK",
+        "intent": "Hong Kong law and courts",
+        "style": "HongKong",
+        "text": "This Agreement shall be governed by and construed in accordance with the laws of the Hong Kong Special Administrative Region. Each party irrevocably submits to the exclusive jurisdiction of the courts of Hong Kong."
+      },
+      {
+        "variant_id": "NDA-UNI-MISC-001-V2-ARB-ICC",
+        "intent": "ICC International Arbitration",
+        "style": "Arbitration-ICC",
+        "text": "This Agreement shall be governed by [GOVERNING_LAW]. Any dispute arising out of or in connection with this Agreement shall be finally settled under the Rules of Arbitration of the International Chamber of Commerce by one or more arbitrators appointed in accordance with said Rules. The seat of arbitration shall be [ARBITRATION_CITY]. The language of the arbitration shall be English."
+      },
+      {
+        "variant_id": "NDA-UNI-MISC-001-V2-ARB-AAA",
+        "intent": "AAA Arbitration for US parties",
+        "style": "Arbitration-AAA",
+        "text": "This Agreement shall be governed by the laws of [GOVERNING_LAW_STATE]. Any dispute shall be resolved by binding arbitration under the Commercial Arbitration Rules of the American Arbitration Association, with arbitration to be held in [ARBITRATION_CITY], [GOVERNING_LAW_STATE]. Judgment on the award may be entered in any court of competent jurisdiction."
+      },
+      {
+        "variant_id": "NDA-UNI-MISC-001-V2-ARB-LCIA",
+        "intent": "LCIA Arbitration for international disputes",
+        "style": "Arbitration-LCIA",
+        "text": "This Agreement shall be governed by [GOVERNING_LAW]. Any dispute arising out of or in connection with this Agreement shall be referred to and finally resolved by arbitration under the LCIA Rules, which Rules are deemed to be incorporated by reference into this clause. The seat of arbitration shall be London, England. The language of the arbitration shall be English."
+      }
+    ],
+    "jurisdiction": "VARIABLE",
+    "practice_area": "Corporate",
+    "tags": ["governing law", "jurisdiction", "venue", "choice of law"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Choose law favorable to your position. Forum selection important for litigation costs. Consider arbitration vs. litigation. US: Delaware (corporate-friendly), California (employee-friendly), New York (commercial disputes). International: English law (common law tradition), Singapore/HK (Asia), Germany (EU). Exclude conflicts of law rules to avoid forum shopping.",
+    "related_clauses": ["NDA-UNI-MISC-003"]
+  },
+  {
+    "clause_id": "NDA-UNI-MISC-002",
+    "clause_type": "Miscellaneous",
+    "category": "General Provisions",
+    "title": "Entire Agreement and Amendment",
+    "legal_intent": "Establish this as complete agreement and require written modifications",
+    "is_mandatory": true,
+    "clause_text": "This Agreement constitutes the entire agreement between the parties concerning the subject matter hereof and supersedes all prior or contemporaneous agreements, whether written or oral. This Agreement may be amended only by a written instrument signed by both parties.",
+    "variants": [],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["entire agreement", "integration", "amendment", "modification"],
+    "risk_level": "Low",
+    "negotiation_notes": "Standard provision. Prevents claims based on prior discussions or side agreements. Requires written amendments to avoid informal modifications.",
+    "related_clauses": ["NDA-UNI-MISC-006"]
+  },
+  {
+    "clause_id": "NDA-UNI-MISC-003",
+    "clause_type": "Miscellaneous",
+    "category": "General Provisions",
+    "title": "Assignment",
+    "legal_intent": "Control transfer of agreement rights and obligations",
+    "is_mandatory": true,
+    "clause_text": "Recipient may not assign or transfer this Agreement or any of its rights or obligations hereunder without the prior written consent of Company. Any attempted assignment in violation of this provision shall be null and void. This Agreement shall be binding upon and inure to the benefit of the parties and their permitted successors and assigns.",
+    "variants": [
+      {
+        "variant_id": "NDA-UNI-MISC-003-V1",
+        "intent": "Allow company assignment",
+        "style": "Asymmetric",
+        "text": "Recipient may not assign this Agreement without Company's consent. Company may freely assign this Agreement to any affiliate, successor, or in connection with a merger, acquisition, or sale of assets."
+      },
+      {
+        "variant_id": "NDA-UNI-MISC-003-V2",
+        "intent": "Bilateral assignment restriction",
+        "style": "Balanced",
+        "text": "Neither party may assign this Agreement without the other party's written consent, except to a successor in connection with a merger, acquisition, or sale of substantially all assets."
+      }
+    ],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["assignment", "transfer", "successors", "change of control"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Prevents transfer to competitor or unfriendly party. Company often retains assignment rights. Consider exceptions for corporate restructuring.",
+    "related_clauses": ["NDA-UNI-MISC-002"]
+  },
+  {
+    "clause_id": "NDA-UNI-MISC-004",
+    "clause_type": "Miscellaneous",
+    "category": "General Provisions",
+    "title": "Severability",
+    "legal_intent": "Preserve agreement if one provision is unenforceable",
+    "is_mandatory": true,
+    "clause_text": "If any provision of this Agreement is held to be invalid, illegal, or unenforceable, the validity, legality, and enforceability of the remaining provisions shall not be affected or impaired thereby, and such provision shall be reformed to the minimum extent necessary to make it valid and enforceable.",
+    "variants": [],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["severability", "savings clause", "invalidity"],
+    "risk_level": "Low",
+    "negotiation_notes": "Standard provision. Protects against total invalidity if one clause is unenforceable. Consider if reformation or deletion is preferred approach.",
+    "related_clauses": ["NDA-UNI-MISC-002"]
+  },
+  {
+    "clause_id": "NDA-UNI-MISC-005",
+    "clause_type": "Miscellaneous",
+    "category": "General Provisions",
+    "title": "Waiver",
+    "legal_intent": "Prevent implied waivers from single instances",
+    "is_mandatory": true,
+    "clause_text": "No waiver of any provision of this Agreement shall be effective unless in writing and signed by the party against whom such waiver is sought to be enforced. No failure or delay by either party in exercising any right, power, or remedy shall operate as a waiver thereof, nor shall any single or partial exercise preclude any other or further exercise of any right, power, or remedy.",
+    "variants": [],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["waiver", "non-waiver", "remedies"],
+    "risk_level": "Low",
+    "negotiation_notes": "Prevents claims that failure to enforce creates waiver. Preserves all remedies despite delay in enforcement.",
+    "related_clauses": ["NDA-UNI-MISC-002"]
+  },
+  {
+    "clause_id": "NDA-UNI-MISC-006",
+    "clause_type": "Miscellaneous",
+    "category": "General Provisions",
+    "title": "Counterparts and Electronic Signatures",
+    "legal_intent": "Allow execution in multiple copies and electronic signing",
+    "is_mandatory": false,
+    "clause_text": "This Agreement may be executed in counterparts, each of which shall be deemed an original and all of which together shall constitute one and the same instrument. Electronic signatures shall have the same force and effect as original signatures.",
+    "variants": [],
+    "jurisdiction": "US-ALL",
+    "practice_area": "Corporate",
+    "tags": ["counterparts", "execution", "electronic signature", "e-sign"],
+    "risk_level": "Low",
+    "negotiation_notes": "Facilitates remote signing. Standard provision under E-SIGN Act and UETA. May want to specify acceptable electronic signature methods.",
+    "related_clauses": ["NDA-UNI-MISC-002"]
+  }
+]

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faParagraph, 
+  faFileContract, 
   faSpellCheck, 
   faRobot, 
   faShieldAlt, 
@@ -19,6 +20,7 @@ import ChatContainer from './components/ChatContainer/ChatContainer';
 import InputBar from './components/InputBar/InputBar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
+import LegalContracts from './pages/LegalContracts';
 import { legalAPI } from './services/api';
 import { 
   loadChatsFromStorage, 
@@ -30,6 +32,8 @@ import {
 } from './utils/chatUtils';
 
 function App() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [chats, setChats] = useState({});
   const [activeChatId, setActiveChatId] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -272,82 +276,26 @@ function App() {
   const currentChat = getCurrentChat();
   const chatList = sortChatsByDate(chats);
 
-  return (
-    <div className={styles.app}>
-      <div className={styles.sidebar}>
-        <div className={styles.logo}>
-          <div className={styles.logoIcon}>
-            <img 
-              src="https://sspark.genspark.ai/cfimages?u1=qRqawqrDk00RQMP6wXEUHuxWslNIbEJeCgy3Kqs9GXjw0sIL8483WOde5qmLhtDY%2Fhw0V%2BGoiSSXpfCp3EeKCA2VGgjvltWHVtZrtmfw3iMJN6A6k3wj&u2=tJ5MdbAFRhq2FK3f&width=2560" 
-              alt="LawAI Logo" 
-            />
-          </div>
-        </div>
-        
-        <div className={styles.sidebarDivider}></div>
-        
-        <div className={styles.sidebarSection}>
-          <button className={styles.sidebarIcon}>
-            <FontAwesomeIcon icon={faParagraph} />
-            <span className={styles.iconLabel}>Paraphraser</span>
-          </button>
-          
-          <button className={styles.sidebarIcon}>
-            <FontAwesomeIcon icon={faSpellCheck} />
-            <span className={styles.iconLabel}>Grammar Checker</span>
-          </button>
-          
-          <button className={styles.sidebarIcon}>
-            <FontAwesomeIcon icon={faRobot} />
-            <span className={styles.iconLabel}>AI Detector</span>
-          </button>
-          
-          <button className={styles.sidebarIcon}>
-            <FontAwesomeIcon icon={faShieldAlt} />
-            <span className={styles.iconLabel}>Plagiarism Checker</span>
-          </button>
-          
-          <button className={styles.sidebarIcon}>
-            <FontAwesomeIcon icon={faUserCheck} />
-            <span className={styles.iconLabel}>AI Humanizer</span>
-          </button>
-          
-          <button className={`${styles.sidebarIcon} ${styles.active}`}>
-            <FontAwesomeIcon icon={faComments} />
-            <span className={styles.iconLabel}>Legal AI Chat</span>
-          </button>
-          
-          <button className={styles.sidebarIcon}>
-            <FontAwesomeIcon icon={faImage} />
-            <span className={styles.iconLabel}>AI Image Generator</span>
-          </button>
-          
-          <button className={styles.sidebarIcon}>
-            <FontAwesomeIcon icon={faLanguage} />
-            <span className={styles.iconLabel}>Translate</span>
-          </button>
-          
-          <button className={styles.sidebarIcon}>
-            <FontAwesomeIcon icon={faFileAlt} />
-            <span className={styles.iconLabel}>Summarizer</span>
-          </button>
-        </div>
-        
-        <div className={styles.sidebarBottom}>
-          <button className={styles.sidebarIcon}>
-            <FontAwesomeIcon icon={faEllipsisH} />
-            <span className={styles.iconLabel}>More</span>
-          </button>
-          
-          <div className={styles.sidebarDivider}></div>
-          
-          <button className={styles.sidebarIcon}>
-            <FontAwesomeIcon icon={faGlobe} />
-            <span className={styles.iconLabel}>LawAI for Chrome</span>
-          </button>
-        </div>
-      </div>
+  const navItems = [
+    { path: '/legal-contracts', icon: faFileContract, label: 'Legal Contracts' },
+    { path: '#', icon: faSpellCheck, label: 'Grammar Checker' },
+    { path: '#', icon: faRobot, label: 'AI Detector' },
+    { path: '#', icon: faShieldAlt, label: 'Plagiarism Checker' },
+    { path: '#', icon: faUserCheck, label: 'AI Humanizer' },
+    { path: '/law-ai-llm', icon: faComments, label: 'Legal AI Chat' },
+    { path: '#', icon: faImage, label: 'AI Image Generator' },
+    { path: '#', icon: faLanguage, label: 'Translate' },
+    { path: '#', icon: faFileAlt, label: 'Summarizer' },
+  ];
 
+  const handleNavClick = (path) => {
+    if (path !== '#') {
+      navigate(path);
+    }
+  };
+
+  const ChatPageContent = () => (
+    <>
       <Sidebar
         chats={chatList}
         activeChatId={activeChatId}
@@ -381,6 +329,56 @@ function App() {
           </div>
         )}
       </div>
+    </>
+  );
+
+  return (
+    <div className={styles.app}>
+      <div className={styles.sidebar}>
+        <div className={styles.logo}>
+          <div className={styles.logoIcon}>
+            <img 
+              src="https://sspark.genspark.ai/cfimages?u1=qRqawqrDk00RQMP6wXEUHuxWslNIbEJeCgy3Kqs9GXjw0sIL8483WOde5qmLhtDY%2Fhw0V%2BGoiSSXpfCp3EeKCA2VGgjvltWHVtZrtmfw3iMJN6A6k3wj&u2=tJ5MdbAFRhq2FK3f&width=2560" 
+              alt="LawAI Logo" 
+            />
+          </div>
+        </div>
+        
+        <div className={styles.sidebarDivider}></div>
+        
+        <div className={styles.sidebarSection}>
+          {navItems.map((item, index) => (
+            <button 
+              key={index}
+              className={`${styles.sidebarIcon} ${location.pathname === item.path ? styles.active : ''}`}
+              onClick={() => handleNavClick(item.path)}
+            >
+              <FontAwesomeIcon icon={item.icon} />
+              <span className={styles.iconLabel}>{item.label}</span>
+            </button>
+          ))}
+        </div>
+        
+        <div className={styles.sidebarBottom}>
+          <button className={styles.sidebarIcon}>
+            <FontAwesomeIcon icon={faEllipsisH} />
+            <span className={styles.iconLabel}>More</span>
+          </button>
+          
+          <div className={styles.sidebarDivider}></div>
+          
+          <button className={styles.sidebarIcon}>
+            <FontAwesomeIcon icon={faGlobe} />
+            <span className={styles.iconLabel}>LawAI for Chrome</span>
+          </button>
+        </div>
+      </div>
+
+      <Routes>
+        <Route path="/" element={<Navigate to="/law-ai-llm" replace />} />
+        <Route path="/legal-contracts" element={<LegalContracts />} />
+        <Route path="/law-ai-llm" element={<ChatPageContent />} />
+      </Routes>
     </div>
   );
 }

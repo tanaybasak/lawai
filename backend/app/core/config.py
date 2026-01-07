@@ -39,8 +39,24 @@ class Settings(BaseSettings):
     EMBEDDING_MODEL: str = "text-embedding-3-small"
     TEMPERATURE: float = 0.1
 
-    # Vector Store
-    VECTOR_STORE_PATH: str = "./data/combined/vector_store"
+    # Vector Store Paths
+    VECTOR_STORE_PATH: str = "./data/combined/vector_store"  # Default (legacy)
+    VECTOR_STORE_IPC: str = "./data/ipc/vector_store"
+    VECTOR_STORE_CRPC: str = "./data/crpc/vector_store"
+    VECTOR_STORE_COMBINED: str = "./data/combined/vector_store"
+    VECTOR_STORE_NDA: str = "./data/nda/vector_store"
+    VECTOR_STORE_NDA_UNILATERAL: str = "./data/nda/unilateral_vector_store"
+    
+    # Vector Store Mapping by Domain
+    VECTOR_STORES: dict = {
+        "criminal": "./data/combined/vector_store",  # IPC + CrPC
+        "ipc": "./data/ipc/vector_store",
+        "crpc": "./data/crpc/vector_store",
+        "contracts": "./data/nda/vector_store",
+        "nda": "./data/nda/vector_store",
+        "nda_mutual": "./data/nda/vector_store",
+        "nda_unilateral": "./data/nda/unilateral_vector_store",
+    }
 
     # Document Processing
     CHUNK_SIZE: int = 1000

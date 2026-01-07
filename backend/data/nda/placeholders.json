@@ -1,0 +1,128 @@
+{
+  "placeholders": {
+    "COMPANY_NAME": {
+      "description": "Legal name of the disclosing party/company",
+      "example": "Acme Corporation",
+      "usage": "Party definitions, agreement header"
+    },
+    "RECIPIENT_NAME": {
+      "description": "Legal name of the receiving party/recipient",
+      "example": "Beta Industries Inc.",
+      "usage": "Party definitions, agreement header"
+    },
+    "PURPOSE_DESCRIPTION": {
+      "description": "Specific purpose for disclosure of confidential information",
+      "example": "evaluating a potential investment in Company",
+      "usage": "Purpose definition clause"
+    },
+    "SPECIFIC_TRANSACTION": {
+      "description": "Specific transaction being evaluated",
+      "example": "acquire Company's software division",
+      "usage": "Narrow purpose definitions"
+    },
+    "STANDSTILL_DURATION": {
+      "description": "Duration of standstill period in months",
+      "example": "12",
+      "options": ["12", "18", "24"],
+      "usage": "Standstill provision"
+    },
+    "OWNERSHIP_THRESHOLD_PERCENTAGE": {
+      "description": "Maximum percentage of securities that can be acquired",
+      "example": "5",
+      "options": ["1", "2", "5"],
+      "usage": "Standstill comprehensive variant"
+    },
+    "GOVERNING_LAW": {
+      "description": "Complete governing law clause - jurisdiction-specific variants available",
+      "example": "the laws of the State of Delaware, without regard to its conflicts of law principles",
+      "usage": "Base governing law clause - use jurisdiction overrides for specific territories",
+      "overrides": [
+        "US-California",
+        "US-Delaware", 
+        "US-NewYork",
+        "UK-England",
+        "Germany",
+        "Singapore",
+        "HongKong",
+        "Arbitration-ICC",
+        "Arbitration-AAA",
+        "Arbitration-LCIA"
+      ]
+    },
+    "GOVERNING_LAW_STATE": {
+      "description": "State whose laws govern the agreement (US only)",
+      "example": "Delaware",
+      "usage": "Governing law clause, arbitration clause"
+    },
+    "JURISDICTION_COUNTY": {
+      "description": "County for exclusive jurisdiction",
+      "example": "New Castle County",
+      "usage": "Jurisdiction clause"
+    },
+    "ARBITRATION_CITY": {
+      "description": "City where arbitration will be held",
+      "example": "Wilmington",
+      "usage": "Arbitration variant"
+    },
+    "EFFECTIVE_DATE": {
+      "description": "Date the agreement becomes effective",
+      "example": "January 15, 2026",
+      "usage": "Agreement header, term calculation"
+    },
+    "AGREEMENT_TERM_YEARS": {
+      "description": "Duration of agreement in years",
+      "example": "2",
+      "options": ["1", "2", "3", "5"],
+      "usage": "Term clause"
+    },
+    "SURVIVAL_PERIOD_YEARS": {
+      "description": "Years confidentiality obligations survive after termination",
+      "example": "5",
+      "options": ["3", "5", "7", "indefinite"],
+      "usage": "Survival clause"
+    },
+    "NOTICE_PERIOD_DAYS": {
+      "description": "Days notice required for termination",
+      "example": "30",
+      "options": ["30", "60", "90"],
+      "usage": "Termination notice clause"
+    },
+    "BREACH_NOTIFICATION_HOURS": {
+      "description": "Hours within which breach must be reported",
+      "example": "24",
+      "options": ["24", "48", "72"],
+      "usage": "Breach notification clause"
+    },
+    "NON_SOLICIT_DURATION_YEARS": {
+      "description": "Duration of non-solicitation restriction in years",
+      "example": "1",
+      "options": ["1", "2"],
+      "usage": "Non-solicitation clause"
+    }
+  },
+  "formatting_rules": {
+    "style": "UPPERCASE with underscores",
+    "consistency": "Same placeholder used across all variants",
+    "reusability": "Placeholders in dictionary can be reused across different agreements",
+    "no_inline_prose": "Never use descriptive prose like 'describe specific purpose' - use placeholder names only"
+  },
+  "validation": {
+    "required_for_execution": [
+      "COMPANY_NAME",
+      "RECIPIENT_NAME",
+      "GOVERNING_LAW_STATE",
+      "EFFECTIVE_DATE"
+    ],
+    "optional_customizable": [
+      "PURPOSE_DESCRIPTION",
+      "AGREEMENT_TERM_YEARS",
+      "SURVIVAL_PERIOD_YEARS",
+      "NOTICE_PERIOD_DAYS"
+    ],
+    "context_dependent": [
+      "STANDSTILL_DURATION",
+      "NON_SOLICIT_DURATION_YEARS",
+      "OWNERSHIP_THRESHOLD_PERCENTAGE"
+    ]
+  }
+}
