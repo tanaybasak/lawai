@@ -64,6 +64,9 @@ build/
 backend/data/*/vector_store/
 backend/data/*/*.pdf
 backend/data/*/*.json
+*.faiss
+*.index
+vector_store/
 
 # Keep directory structure
 !backend/data/ipc/.gitkeep
