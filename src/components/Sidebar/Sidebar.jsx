@@ -116,11 +116,6 @@ const Sidebar = ({ chats, activeChatId, onSelectChat, onNewChat, onDeleteChat, o
                     <span className={styles.chatDate}>
                       {formatChatDate(chat.updatedAt)}
                     </span>
-                    {chat.messages.length > 0 && (
-                      <span className={styles.messageCount}>
-                        {chat.messages.length} {t('chat.messages', { count: chat.messages.length })}
-                      </span>
-                    )}
                   </div>
                 </div>
                 <div className={styles.chatActions}>
