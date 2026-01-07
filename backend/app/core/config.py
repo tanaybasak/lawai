@@ -27,6 +27,7 @@ class Settings(BaseSettings):
     # CORS
     ALLOWED_ORIGINS: List[str] = [
         "http://localhost:3000",
+        "https://lawx.netlify.app",
         "https://jolly-taiyaki-40208d.netlify.app"
     ]
 
