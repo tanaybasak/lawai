@@ -3,13 +3,9 @@
 # Startup script for Render deployment
 echo "🚀 Starting LawAI Backend..."
 
-# Check if vector stores exist, if not build them
-if [ ! -d "data/ipc/vector_store" ] || [ -z "$(ls -A data/ipc/vector_store 2>/dev/null)" ]; then
-    echo "📦 Building IPC vector store..."
-    python scripts/build_ipc_vectorstore.py
-else
-    echo "✅ Vector stores already exist"
-fi
+# Build vector stores
+echo "📦 Building vector stores..."
+python scripts/build_ipc_vectorstore.py
 
 # Start the application
 echo "🌟 Starting uvicorn server..."
