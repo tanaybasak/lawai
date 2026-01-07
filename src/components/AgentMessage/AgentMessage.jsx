@@ -29,6 +29,7 @@ const AgentMessage = ({ agentName, message, agentType, isTyping }) => {
             <ReactMarkdown 
               remarkPlugins={[remarkGfm]}
               components={{
+                // eslint-disable-next-line jsx-a11y/heading-has-content
                 h3: ({node, ...props}) => <h3 style={{fontSize: '1.1em', fontWeight: 'bold', marginTop: '16px', marginBottom: '8px'}} {...props} />,
                 strong: ({node, ...props}) => <strong style={{fontWeight: '600', color: '#000'}} {...props} />,
                 p: ({node, ...props}) => <p style={{marginBottom: '12px', lineHeight: '1.6'}} {...props} />,

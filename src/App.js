@@ -213,6 +213,7 @@ function App() {
                 accumulatedText += parsed.content;
                 
                 // Update the AI message with accumulated text
+                // eslint-disable-next-line no-loop-func
                 setChats(prev => {
                   const chat = prev[activeChatId];
                   const messages = chat.messages.map(msg => 
