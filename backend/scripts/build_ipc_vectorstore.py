@@ -33,9 +33,9 @@ class IPCVectorStore:
         print(f"✅ Loaded {len(sections)} sections")
         return sections
     
-    def create_documents(self, sections: List[Dict]) -> List[Document]:
-        """Convert IPC sections to LangChain documents"""
-        print("\n📄 Creating documents...")
+    def create_documents(self, sections: List[Dict], law_name: str = "IPC") -> List[Document]:
+        """Convert legal sections to LangChain documents"""
+        print(f"\n📄 Creating {law_name} documents...")
         
         documents = []
         
@@ -52,10 +52,10 @@ class IPCVectorStore:
             # Create metadata
             metadata = {
                 "jurisdiction": section.get("jurisdiction", "India"),
-                "law": section.get("law", "IPC"),
+                "law": law_name,
                 "section": section["section"],
                 "title": section["title"],
-                "source": f"IPC Section {section['section']}"
+                "source": f"{law_name} Section {section['section']}"
             }
             
             if section.get("chapter"):
@@ -198,7 +198,7 @@ def main():
     print("=" * 60)
     rag = IPCVectorStore()
     ipc_sections = rag.load_sections_from_json(str(ipc_json_path))
-    ipc_documents = rag.create_documents(ipc_sections)
+    ipc_documents = rag.create_documents(ipc_sections, law_name="IPC")
     
     if args.split:
         ipc_documents = rag.split_documents(ipc_documents, chunk_size=args.chunk_size)
@@ -208,7 +208,7 @@ def main():
     print("📚 Processing CrPC (Code of Criminal Procedure)")
     print("=" * 60)
     crpc_sections = rag.load_sections_from_json(str(crpc_json_path))
-    crpc_documents = rag.create_documents(crpc_sections)
+    crpc_documents = rag.create_documents(crpc_sections, law_name="CrPC")
     
     if args.split:
         crpc_documents = rag.split_documents(crpc_documents, chunk_size=args.chunk_size)
