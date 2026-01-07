@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.messageBubble {
+  background-color: transparent;
+  border-radius: 0;
+  padding: $spacing-md 0;
+  margin: $spacing-xl 0;
+  max-width: 100%;
+  word-wrap: break-word;
+  display: flex;
+  align-items: flex-start;
+  gap: $spacing-md;
+
+  @include mobile {
+    margin: $spacing-md 0;
+    gap: $spacing-sm;
+    padding: $spacing-sm 0;
+  }
+
+  &.user {
+    background-color: transparent;
+    margin-left: 0;
+    border: none;
+  }
+
+  &.agent {
+    background-color: transparent;
+    margin-right: 0;
+  }
+}
+
+.messageText {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+  transition: color $transition-base;
+  flex: 1;
+  min-width: 0;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}

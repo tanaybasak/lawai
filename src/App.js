@@ -13,7 +13,7 @@ import {
   faEllipsisH,
   faGlobe
 } from '@fortawesome/free-solid-svg-icons';
-import styles from './App.module.css';
+import styles from './App.module.scss';
 import EmptyState from './components/EmptyState/EmptyState';
 import ChatContainer from './components/ChatContainer/ChatContainer';
 import InputBar from './components/InputBar/InputBar';

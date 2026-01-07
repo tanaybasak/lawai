@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import styles from './AgentMessage.module.css';
+import styles from './AgentMessage.module.scss';
 
 const AgentMessage = ({ agentName, message, agentType, isTyping }) => {
   const getAgentIcon = (type) => {

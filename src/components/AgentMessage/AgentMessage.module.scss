@@ -1,0 +1,135 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.agentMessage {
+  display: flex;
+  gap: $spacing-md;
+  margin: $spacing-xl 0;
+  align-items: flex-start;
+  max-width: 100%;
+  overflow-wrap: break-word;
+
+  @include mobile {
+    gap: $spacing-sm;
+    margin: $spacing-md 0;
+  }
+}
+
+.agentAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: $radius-full;
+  @include flex-center;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: $spacing-xs;
+  transition: background-color $transition-base, border-color $transition-base;
+
+  @include mobile {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  &.strategist {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+  }
+
+  &.designer {
+    background-color: #ffcc99;
+  }
+
+  &.writer {
+    background-color: #b39ddb;
+  }
+}
+
+.agentContent {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.agentName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 $spacing-xs 0;
+  transition: color $transition-base;
+
+  @include mobile {
+    font-size: 13px;
+  }
+}
+
+.agentText {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  transition: color $transition-base;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  strong {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  ul, ol {
+    margin: $spacing-sm 0;
+    padding-left: $spacing-xl;
+
+    @include mobile {
+      padding-left: $spacing-lg;
+    }
+  }
+}
+
+.messageParagraph {
+  margin-bottom: $spacing-lg;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mobile {
+    margin-bottom: $spacing-md;
+  }
+}
+
+.listItem {
+  margin-left: $spacing-xl;
+  margin-bottom: $spacing-sm;
+  line-height: 1.6;
+
+  @include mobile {
+    margin-left: $spacing-lg;
+    line-height: 1.5;
+  }
+}
+
+.agentTyping {
+  color: var(--text-tertiary);
+  font-style: italic;
+  font-size: 14px;
+  transition: color $transition-base;
+
+  @include mobile {
+    font-size: 13px;
+  }
+}

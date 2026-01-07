@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ChatContainer.module.css';
+import styles from './ChatContainer.module.scss';
 import AgentMessage from '../AgentMessage/AgentMessage';
 import MessageBubble from '../MessageBubble/MessageBubble';
 

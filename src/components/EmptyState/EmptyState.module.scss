@@ -1,0 +1,274 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.emptyState {
+  @include flex-column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 0 $spacing-lg;
+
+  @include mobile {
+    padding: 0 $spacing-md;
+  }
+}
+
+.greeting {
+  font-size: 56px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 $spacing-lg 0;
+  letter-spacing: -0.02em;
+
+  @include tablet {
+    font-size: 42px;
+  }
+
+  @include mobile {
+    font-size: 36px;
+  }
+}
+
+.subtext {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin: 0 0 56px 0;
+  font-weight: 400;
+  line-height: 1.6;
+  transition: color $transition-base;
+  max-width: 600px;
+
+  @include tablet {
+    font-size: 16px;
+    margin-bottom: $spacing-4xl;
+  }
+
+  @include mobile {
+    font-size: 15px;
+    margin-bottom: $spacing-3xl;
+  }
+}
+
+.inputContainer {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: $spacing-2xl;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: $spacing-lg;
+  padding: $spacing-lg $spacing-xl;
+  box-shadow: $shadow-lg;
+  transition: all $transition-base;
+
+  @include mobile {
+    padding: $spacing-md;
+    gap: $spacing-sm;
+    border-radius: $spacing-md;
+  }
+
+  &:hover {
+    border-color: #10b981;
+    box-shadow: 0 12px 30px rgba(16, 185, 129, 0.15);
+  }
+
+  &:focus-within {
+    border-color: #10b981;
+    box-shadow: 0 12px 30px rgba(16, 185, 129, 0.2);
+  }
+}
+
+.inputField {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  color: var(--text-primary);
+  transition: color $transition-base;
+  min-width: 0;
+
+  @include mobile {
+    font-size: 15px;
+  }
+
+  &::placeholder {
+    color: var(--text-tertiary);
+  }
+}
+
+.inputIcons {
+  display: flex;
+  gap: $spacing-md;
+  align-items: center;
+
+  @include mobile {
+    gap: $spacing-sm;
+  }
+}
+
+.inputButton {
+  background: none;
+  border: none;
+  @include interactive;
+  font-size: 18px;
+  padding: $spacing-xs $spacing-sm;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  transition: all $transition-fast;
+
+  @include mobile {
+    font-size: 16px;
+    padding: $spacing-xs;
+  }
+
+  &:hover {
+    background-color: var(--hover-bg);
+  }
+}
+
+.submitButton {
+  width: 44px;
+  height: 44px;
+  border-radius: $spacing-md;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  @include interactive;
+  @include flex-center;
+  color: white;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transition: all $transition-base;
+
+  @include mobile {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.useCasesSection {
+  width: 100%;
+  max-width: 700px;
+}
+
+.useCasesTitle {
+  font-size: 14px;
+  color: var(--text-tertiary);
+  margin: 0 0 $spacing-xl 0;
+  text-align: left;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color $transition-base;
+
+  @include mobile {
+    font-size: 12px;
+    margin-bottom: $spacing-md;
+  }
+}
+
+.useCasesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: $spacing-md;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: $spacing-sm;
+  }
+}
+
+.useCaseCard {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: $spacing-md;
+  padding: $spacing-xl;
+  text-align: left;
+  @include interactive;
+  @include flex-column;
+  gap: $spacing-md;
+  position: relative;
+  overflow: hidden;
+  transition: all $transition-base;
+
+  @include mobile {
+    padding: $spacing-lg;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+    opacity: 0;
+    transition: opacity $transition-base;
+  }
+
+  &:hover {
+    background: var(--hover-bg);
+    border-color: #667eea;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+
+    &::before {
+      opacity: 1;
+    }
+
+    .useCaseIcon {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.useCaseIcon {
+  font-size: 28px;
+  transition: transform $transition-base;
+
+  @include mobile {
+    font-size: 24px;
+  }
+}
+
+.useCaseText {
+  font-size: 15px;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.5;
+  position: relative;
+  z-index: $z-base;
+  transition: color $transition-base;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}

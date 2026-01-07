@@ -1,0 +1,74 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.header {
+  @include flex-between;
+  padding: $spacing-lg $spacing-xl;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color $transition-base, border-color $transition-base;
+
+  @include mobile {
+    padding: $spacing-md;
+  }
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+
+  @include mobile {
+    gap: $spacing-sm;
+  }
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+
+  @include mobile {
+    gap: $spacing-sm;
+  }
+}
+
+.menuIcon {
+  font-size: 24px;
+  @include interactive;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  transition: color $transition-base;
+
+  @include mobile {
+    font-size: 22px;
+  }
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  transition: color $transition-base;
+  @include text-truncate;
+
+  @include mobile {
+    font-size: 15px;
+    max-width: 200px;
+  }
+}
+
+.composeIcon {
+  font-size: 20px;
+  @include interactive;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  transition: color $transition-base;
+
+  @include mobile {
+    font-size: 18px;
+  }
+}

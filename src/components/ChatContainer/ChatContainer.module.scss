@@ -1,0 +1,70 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.chatContainer {
+  @include flex-column;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: $spacing-xl $spacing-xl 100px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @include custom-scrollbar;
+
+  @include tablet {
+    max-width: 100%;
+    padding: $spacing-lg $spacing-lg 100px;
+  }
+
+  @include mobile {
+    padding: $spacing-md $spacing-md 120px;
+  }
+}
+
+.messagesList {
+  @include flex-column;
+  gap: $spacing-xl;
+
+  @include mobile {
+    gap: $spacing-md;
+  }
+}
+
+.loadingIndicator {
+  display: flex;
+  gap: $spacing-sm;
+  padding: $spacing-lg;
+  justify-content: center;
+}
+
+.loadingDot {
+  width: 10px;
+  height: 10px;
+  border-radius: $radius-full;
+  background-color: #667eea;
+  animation: bounce 1.4s infinite ease-in-out both;
+
+  @include mobile {
+    width: 8px;
+    height: 8px;
+  }
+
+  &:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}

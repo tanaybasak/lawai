@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import styles from './InputBar.module.css';
+import styles from './InputBar.module.scss';
 
 const InputBar = ({ onSendMessage, disabled }) => {
   const { t } = useTranslation();

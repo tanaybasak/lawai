@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faPaperclip, faGear } from '@fortawesome/free-solid-svg-icons';
-import styles from './EmptyState.module.css';
+import styles from './EmptyState.module.scss';
 
 const EmptyState = ({ onSubmit }) => {
   const { t } = useTranslation();
