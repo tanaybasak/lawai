@@ -276,7 +276,7 @@ function App() {
     <div className={styles.app}>
       <div className={styles.sidebar}>
         <div className={styles.logo}>
-          <div className={styles['logo-icon']}>
+          <div className={styles.logoIcon}>
             <img 
               src="https://sspark.genspark.ai/cfimages?u1=qRqawqrDk00RQMP6wXEUHuxWslNIbEJeCgy3Kqs9GXjw0sIL8483WOde5qmLhtDY%2Fhw0V%2BGoiSSXpfCp3EeKCA2VGgjvltWHVtZrtmfw3iMJN6A6k3wj&u2=tJ5MdbAFRhq2FK3f&width=2560" 
               alt="LawAI Logo" 
@@ -284,66 +284,66 @@ function App() {
           </div>
         </div>
         
-        <div className={styles['sidebar-divider']}></div>
+        <div className={styles.sidebarDivider}></div>
         
-        <div className={styles['sidebar-section']}>
-          <button className={styles['sidebar-icon']}>
+        <div className={styles.sidebarSection}>
+          <button className={styles.sidebarIcon}>
             <FontAwesomeIcon icon={faParagraph} />
-            <span className={styles['icon-label']}>Paraphraser</span>
+            <span className={styles.iconLabel}>Paraphraser</span>
           </button>
           
-          <button className={styles['sidebar-icon']}>
+          <button className={styles.sidebarIcon}>
             <FontAwesomeIcon icon={faSpellCheck} />
-            <span className={styles['icon-label']}>Grammar Checker</span>
+            <span className={styles.iconLabel}>Grammar Checker</span>
           </button>
           
-          <button className={styles['sidebar-icon']}>
+          <button className={styles.sidebarIcon}>
             <FontAwesomeIcon icon={faRobot} />
-            <span className={styles['icon-label']}>AI Detector</span>
+            <span className={styles.iconLabel}>AI Detector</span>
           </button>
           
-          <button className={styles['sidebar-icon']}>
+          <button className={styles.sidebarIcon}>
             <FontAwesomeIcon icon={faShieldAlt} />
-            <span className={styles['icon-label']}>Plagiarism Checker</span>
+            <span className={styles.iconLabel}>Plagiarism Checker</span>
           </button>
           
-          <button className={styles['sidebar-icon']}>
+          <button className={styles.sidebarIcon}>
             <FontAwesomeIcon icon={faUserCheck} />
-            <span className={styles['icon-label']}>AI Humanizer</span>
+            <span className={styles.iconLabel}>AI Humanizer</span>
           </button>
           
-          <button className={`${styles['sidebar-icon']} ${styles.active}`}>
+          <button className={`${styles.sidebarIcon} ${styles.active}`}>
             <FontAwesomeIcon icon={faComments} />
-            <span className={styles['icon-label']}>Legal AI Chat</span>
+            <span className={styles.iconLabel}>Legal AI Chat</span>
           </button>
           
-          <button className={styles['sidebar-icon']}>
+          <button className={styles.sidebarIcon}>
             <FontAwesomeIcon icon={faImage} />
-            <span className={styles['icon-label']}>AI Image Generator</span>
+            <span className={styles.iconLabel}>AI Image Generator</span>
           </button>
           
-          <button className={styles['sidebar-icon']}>
+          <button className={styles.sidebarIcon}>
             <FontAwesomeIcon icon={faLanguage} />
-            <span className={styles['icon-label']}>Translate</span>
+            <span className={styles.iconLabel}>Translate</span>
           </button>
           
-          <button className={styles['sidebar-icon']}>
+          <button className={styles.sidebarIcon}>
             <FontAwesomeIcon icon={faFileAlt} />
-            <span className={styles['icon-label']}>Summarizer</span>
+            <span className={styles.iconLabel}>Summarizer</span>
           </button>
         </div>
         
-        <div className={styles['sidebar-bottom']}>
-          <button className={styles['sidebar-icon']}>
+        <div className={styles.sidebarBottom}>
+          <button className={styles.sidebarIcon}>
             <FontAwesomeIcon icon={faEllipsisH} />
-            <span className={styles['icon-label']}>More</span>
+            <span className={styles.iconLabel}>More</span>
           </button>
           
-          <div className={styles['sidebar-divider']}></div>
+          <div className={styles.sidebarDivider}></div>
           
-          <button className={styles['sidebar-icon']}>
+          <button className={styles.sidebarIcon}>
             <FontAwesomeIcon icon={faGlobe} />
-            <span className={styles['icon-label']}>LawAI for Chrome</span>
+            <span className={styles.iconLabel}>LawAI for Chrome</span>
           </button>
         </div>
       </div>
