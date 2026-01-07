@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './ChatContainer.module.scss';
 import AgentMessage from '../AgentMessage/AgentMessage';
 import MessageBubble from '../MessageBubble/MessageBubble';
 
 const ChatContainer = ({ messages, isLoading }) => {
+  const messagesEndRef = useRef(null);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages, isLoading]);
+
   return (
     <div className={styles.chatContainer}>
       <div className={styles.messagesList}>
@@ -36,6 +46,7 @@ const ChatContainer = ({ messages, isLoading }) => {
             <div className={styles.loadingDot}></div>
           </div>
         )}
+        <div ref={messagesEndRef} />
       </div>
     </div>
   );
