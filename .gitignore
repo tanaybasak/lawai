@@ -64,15 +64,15 @@ build/
 # Data files (large PDFs and vector stores)
 backend/data/*/vector_store/
 backend/data/*/*.pdf
-backend/data/*/*.json
 *.faiss
 *.index
 vector_store/
 
-# Keep directory structure
+# Keep directory structure and JSON data files
 !backend/data/ipc/.gitkeep
 !backend/data/crpc/.gitkeep
 !backend/data/combined/.gitkeep
+!backend/data/*/*.json
 
 # Jupyter Notebook
 .ipynb_checkpoints
