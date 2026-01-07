@@ -1,0 +1,462 @@
+[
+  {
+    "clause_id": "NDA-DEF-001",
+    "category": "Definitions",
+    "title": "Confidential Information - General Definition",
+    "clause_text": "\"Confidential Information\" means any and all information, whether written, oral, electronic, or visual, disclosed by one party (the \"Disclosing Party\") to the other party (the \"Receiving Party\") that is designated as confidential or that reasonably should be understood to be confidential given the nature of the information and the circumstances of disclosure.",
+    "alternatives": [
+      "\"Confidential Information\" shall include, but not be limited to, technical data, trade secrets, know-how, research, product plans, products, services, customers, customer lists, markets, software, developments, inventions, processes, formulas, technology, designs, drawings, engineering, hardware configuration information, marketing, finances or other business information.",
+      "\"Confidential Information\" means all information of any kind, nature, or description concerning any matters affecting or relating to the Disclosing Party's business or its customers, including without limitation, any proprietary or confidential knowledge, data, or information."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["definition", "confidential information", "proprietary", "trade secrets"],
+    "risk_level": "High",
+    "negotiation_notes": "Ensure the definition is neither too broad nor too narrow. Consider excluding publicly available information.",
+    "related_clauses": ["NDA-EXC-001", "NDA-OBL-001"]
+  },
+  {
+    "clause_id": "NDA-DEF-002",
+    "category": "Definitions",
+    "title": "Disclosing Party",
+    "clause_text": "\"Disclosing Party\" means the party disclosing Confidential Information to the other party under this Agreement.",
+    "alternatives": [],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["definition", "party", "disclosure"],
+    "risk_level": "Low",
+    "negotiation_notes": "Standard definition, typically non-contentious.",
+    "related_clauses": ["NDA-DEF-001", "NDA-DEF-003"]
+  },
+  {
+    "clause_id": "NDA-DEF-003",
+    "category": "Definitions",
+    "title": "Receiving Party",
+    "clause_text": "\"Receiving Party\" means the party receiving Confidential Information from the other party under this Agreement.",
+    "alternatives": [],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["definition", "party", "receipt"],
+    "risk_level": "Low",
+    "negotiation_notes": "Standard definition, typically non-contentious.",
+    "related_clauses": ["NDA-DEF-001", "NDA-DEF-002"]
+  },
+  {
+    "clause_id": "NDA-EXC-001",
+    "category": "Exclusions",
+    "title": "Exceptions to Confidential Information",
+    "clause_text": "Confidential Information shall not include information that: (a) is or becomes generally available to the public other than as a result of a disclosure by the Receiving Party or its Representatives in violation of this Agreement; (b) was within the Receiving Party's possession prior to its being furnished to the Receiving Party by or on behalf of the Disclosing Party, provided that the source of such information was not known by the Receiving Party to be bound by a confidentiality agreement with, or other contractual, legal, or fiduciary obligation of confidentiality to, the Disclosing Party with respect to such information; (c) becomes available to the Receiving Party on a non-confidential basis from a source other than the Disclosing Party or its Representatives, provided that such source is not known by the Receiving Party to be bound by a confidentiality agreement with, or other contractual, legal, or fiduciary obligation of confidentiality to, the Disclosing Party; or (d) is independently developed by the Receiving Party without reference to or use of the Confidential Information.",
+    "alternatives": [
+      "The obligations set forth in this Agreement shall not apply to information that: (i) is publicly known at the time of disclosure or becomes publicly known through no wrongful act of the Receiving Party; (ii) is rightfully received by the Receiving Party from a third party without breach of any confidentiality obligation; (iii) is independently developed by the Receiving Party without use of or reference to the Confidential Information; or (iv) is approved for release by written authorization of the Disclosing Party."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["exclusions", "exceptions", "public domain", "prior knowledge"],
+    "risk_level": "High",
+    "negotiation_notes": "Critical to define what is NOT confidential. Ensure burden of proof is clearly allocated.",
+    "related_clauses": ["NDA-DEF-001", "NDA-OBL-001"]
+  },
+  {
+    "clause_id": "NDA-OBL-001",
+    "category": "Obligations",
+    "title": "Confidentiality Obligation",
+    "clause_text": "The Receiving Party agrees to hold and maintain the Confidential Information in strict confidence and to take all reasonable precautions to protect such Confidential Information (including, without limitation, all precautions the Receiving Party employs with respect to its own confidential materials). The Receiving Party agrees not to divulge any such Confidential Information or any information derived therefrom to any third person, other than to the Receiving Party's employees, officers, and advisors who have a need to know and who have been advised of and agreed to treat such information in accordance with the terms of this Agreement.",
+    "alternatives": [
+      "Each party shall: (a) use the Confidential Information solely for the Purpose; (b) not disclose the Confidential Information to any third party except as permitted herein; (c) protect the Confidential Information using the same degree of care it uses to protect its own confidential information of similar nature, but in no event less than reasonable care; and (d) limit access to the Confidential Information to those of its employees, officers, directors, consultants, and advisors who have a legitimate need to know and who are bound by confidentiality obligations at least as restrictive as those contained herein.",
+      "The Receiving Party undertakes and agrees that it shall: (i) keep the Confidential Information secret and confidential; (ii) not disclose the Confidential Information in whole or in part to any person without the prior written consent of the Disclosing Party; (iii) not use the Confidential Information for any purpose other than as contemplated by this Agreement; and (iv) take all necessary steps to ensure that the Confidential Information is not disclosed or distributed by its employees, agents, or consultants in violation of this Agreement."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["obligation", "confidentiality", "non-disclosure", "protection"],
+    "risk_level": "Critical",
+    "negotiation_notes": "Core obligation of the agreement. Consider adding specific security measures if dealing with highly sensitive information.",
+    "related_clauses": ["NDA-DEF-001", "NDA-OBL-002", "NDA-OBL-003"]
+  },
+  {
+    "clause_id": "NDA-OBL-002",
+    "category": "Obligations",
+    "title": "Use Restriction",
+    "clause_text": "The Receiving Party agrees that it will use the Confidential Information solely for the purpose of evaluating a potential business relationship between the parties (the \"Purpose\") and not for any other purpose.",
+    "alternatives": [
+      "The Receiving Party shall use the Confidential Information exclusively for the purposes of [INSERT SPECIFIC PURPOSE], and shall not use the Confidential Information for any other purpose without the prior written consent of the Disclosing Party.",
+      "Confidential Information may only be used by the Receiving Party for the evaluation and negotiation of the proposed transaction between the parties and for no other purpose whatsoever."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["use restriction", "purpose limitation", "permitted use"],
+    "risk_level": "High",
+    "negotiation_notes": "Clearly define the permitted purpose. Vague purposes may lead to disputes.",
+    "related_clauses": ["NDA-OBL-001", "NDA-TERM-001"]
+  },
+  {
+    "clause_id": "NDA-OBL-003",
+    "category": "Obligations",
+    "title": "Return or Destruction of Confidential Information",
+    "clause_text": "Upon the written request of the Disclosing Party or upon termination of this Agreement, the Receiving Party shall promptly return to the Disclosing Party all documents, materials, and other tangible items containing or representing Confidential Information and all copies thereof, or certify in writing that all such materials have been destroyed, except that the Receiving Party may retain one copy of such Confidential Information solely for archival purposes and for ensuring compliance with this Agreement.",
+    "alternatives": [
+      "Upon termination of this Agreement or at the Disclosing Party's request, the Receiving Party shall, at the Disclosing Party's option, either return all Confidential Information to the Disclosing Party or destroy all copies of the Confidential Information and certify such destruction in writing to the Disclosing Party.",
+      "At any time upon request by the Disclosing Party, the Receiving Party will promptly deliver to the Disclosing Party, without retaining any copies, all documents and other materials furnished to it by the Disclosing Party and all notes, summaries, reports, and other materials prepared by the Receiving Party that contain Confidential Information."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["return", "destruction", "termination", "disposal"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Consider practical limitations of destruction (e.g., backup systems, email archives). Include exceptions for legal/regulatory retention requirements.",
+    "related_clauses": ["NDA-TERM-001", "NDA-OBL-001"]
+  },
+  {
+    "clause_id": "NDA-DISC-001",
+    "category": "Permitted Disclosures",
+    "title": "Compelled Disclosure",
+    "clause_text": "If the Receiving Party becomes legally compelled to disclose any of the Confidential Information, the Receiving Party will provide the Disclosing Party with prompt written notice so that the Disclosing Party may seek a protective order or other appropriate remedy. In the event that such protective order or other remedy is not obtained, the Receiving Party will furnish only that portion of the Confidential Information which is legally required and will exercise reasonable efforts to obtain reliable assurance that confidential treatment will be accorded the Confidential Information.",
+    "alternatives": [
+      "In the event that the Receiving Party is requested or required (by oral questions, interrogatories, requests for information or documents, subpoena, civil investigative demand, or similar process) to disclose any Confidential Information, the Receiving Party shall provide the Disclosing Party with prompt notice of such request so that the Disclosing Party may seek an appropriate protective order. If, in the absence of a protective order, the Receiving Party is nonetheless legally compelled to disclose Confidential Information, the Receiving Party may disclose only that portion of the Confidential Information which it is legally required to disclose.",
+      "Nothing in this Agreement shall prevent the Receiving Party from disclosing Confidential Information to the extent required by law, court order, or governmental regulation, provided that the Receiving Party gives the Disclosing Party prior written notice of such disclosure and cooperates with the Disclosing Party in seeking a protective order or other appropriate remedy."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["compelled disclosure", "legal requirement", "subpoena", "protective order"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Ensure notice requirement is reasonable (e.g., 'prompt' vs. specific timeframe). Consider who bears costs of seeking protective orders.",
+    "related_clauses": ["NDA-OBL-001", "NDA-EXC-001"]
+  },
+  {
+    "clause_id": "NDA-TERM-001",
+    "category": "Term and Termination",
+    "title": "Term of Agreement",
+    "clause_text": "This Agreement shall commence on the Effective Date and shall continue for a period of [TWO (2) YEARS], unless earlier terminated by either party upon thirty (30) days' written notice to the other party.",
+    "alternatives": [
+      "This Agreement shall remain in effect for a period of [THREE (3) YEARS] from the date of last disclosure of Confidential Information by either party.",
+      "The term of this Agreement shall be [FIVE (5) YEARS] from the Effective Date, automatically renewing for successive one-year periods unless either party provides written notice of non-renewal at least sixty (60) days prior to the end of the then-current term.",
+      "This Agreement shall continue in perpetuity unless terminated by mutual written agreement of the parties."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["term", "duration", "termination", "notice period"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Standard terms range from 2-5 years. Consider the nature of the information and industry practices. Distinguish between term of agreement vs. confidentiality obligations.",
+    "related_clauses": ["NDA-TERM-002", "NDA-OBL-003"]
+  },
+  {
+    "clause_id": "NDA-TERM-002",
+    "category": "Term and Termination",
+    "title": "Survival of Confidentiality Obligations",
+    "clause_text": "The obligations of the Receiving Party under this Agreement shall survive the termination of this Agreement and shall continue for a period of [FIVE (5) YEARS] from the date of disclosure of the Confidential Information.",
+    "alternatives": [
+      "Notwithstanding any termination of this Agreement, the confidentiality obligations set forth herein shall survive and continue for a period of [THREE (3) YEARS] following such termination.",
+      "The parties' confidentiality obligations shall survive the termination or expiration of this Agreement and shall continue indefinitely with respect to trade secrets and for a period of [SEVEN (7) YEARS] with respect to other Confidential Information.",
+      "All obligations of confidentiality shall survive termination of this Agreement and continue in perpetuity."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["survival", "post-termination", "duration", "trade secrets"],
+    "risk_level": "High",
+    "negotiation_notes": "Trade secrets may warrant perpetual protection. Other confidential information typically 3-7 years. Align with statute of limitations and industry standards.",
+    "related_clauses": ["NDA-TERM-001", "NDA-DEF-001"]
+  },
+  {
+    "clause_id": "NDA-REM-001",
+    "category": "Remedies",
+    "title": "Equitable Relief",
+    "clause_text": "The Receiving Party acknowledges that the Confidential Information is valuable and unique, and that disclosure of such information would cause irreparable harm to the Disclosing Party. The Receiving Party agrees that in the event of a breach or threatened breach of this Agreement, the Disclosing Party shall be entitled to seek equitable relief, including injunction and specific performance, in addition to all other remedies available at law or in equity, without the necessity of proving actual damages or posting a bond.",
+    "alternatives": [
+      "Each party acknowledges and agrees that due to the unique nature of the Confidential Information, a breach of this Agreement may cause irreparable injury for which monetary damages would not be an adequate remedy, and that the non-breaching party shall be entitled to seek equitable relief, including but not limited to injunction and specific performance, without the requirement of posting a bond.",
+      "The parties agree that any breach of this Agreement will result in irreparable injury to the Disclosing Party and that the Disclosing Party shall be entitled to seek injunctive relief in any court of competent jurisdiction to prevent or restrain any such breach, in addition to any other legal or equitable remedies that may be available."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["remedies", "injunction", "equitable relief", "specific performance", "irreparable harm"],
+    "risk_level": "High",
+    "negotiation_notes": "Standard provision. May want to clarify that this does not waive right to monetary damages. Consider whether to waive bond requirement.",
+    "related_clauses": ["NDA-OBL-001", "NDA-MISC-004"]
+  },
+  {
+    "clause_id": "NDA-REM-002",
+    "category": "Remedies",
+    "title": "Limitation of Liability",
+    "clause_text": "IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATING TO THIS AGREEMENT, EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+    "alternatives": [
+      "Neither party shall be liable for any indirect, special, incidental, punitive, or consequential damages, including lost profits, arising from or relating to this Agreement, whether based on warranty, contract, tort (including negligence), or any other legal theory, even if a party has been advised of the possibility of such damages.",
+      "Notwithstanding anything to the contrary herein, neither party shall be liable to the other party for any loss of profits or any indirect, special, consequential, or punitive damages arising out of or in connection with this Agreement or the breach thereof."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["limitation of liability", "damages", "cap", "exclusions"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Consider whether to exclude this limitation for willful breaches or gross negligence. May not be enforceable in all jurisdictions.",
+    "related_clauses": ["NDA-REM-001", "NDA-MISC-001"]
+  },
+  {
+    "clause_id": "NDA-OWN-001",
+    "category": "Ownership and Rights",
+    "title": "No License Grant",
+    "clause_text": "Nothing in this Agreement shall be construed as granting any rights to the Receiving Party, by license or otherwise, in or to any Confidential Information, or to any patent, copyright, trademark, or other intellectual property right of the Disclosing Party. All Confidential Information shall remain the sole property of the Disclosing Party.",
+    "alternatives": [
+      "This Agreement does not grant the Receiving Party any license, expressly or impliedly, to the Confidential Information or to any intellectual property rights in or relating to the Confidential Information. All rights in and to the Confidential Information shall remain with the Disclosing Party.",
+      "No license under any trademark, patent, copyright, mask work protection right, or any other intellectual property right is either granted or implied by the conveying of Confidential Information to the Receiving Party. All Confidential Information and intellectual property rights therein shall remain the exclusive property of the Disclosing Party."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["no license", "intellectual property", "ownership", "rights"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Important to clarify no IP rights are transferred. Consider whether feedback/improvements on disclosed information create IP issues.",
+    "related_clauses": ["NDA-DEF-001", "NDA-OWN-002"]
+  },
+  {
+    "clause_id": "NDA-OWN-002",
+    "category": "Ownership and Rights",
+    "title": "No Obligation to Disclose or Transact",
+    "clause_text": "Nothing in this Agreement shall obligate either party to disclose any Confidential Information or to proceed with any proposed transaction or relationship. Either party may, in its sole discretion, terminate discussions and negotiations at any time without liability to the other party.",
+    "alternatives": [
+      "Neither party is under any obligation to disclose Confidential Information to the other party or to enter into any further agreement. Either party may cease further disclosures or discussions at any time without any liability whatsoever.",
+      "This Agreement does not create any obligation on either party to disclose information, to enter into any other agreement, or to refrain from entering into any agreement or business relationship with any third party."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["no obligation", "discretion", "termination", "freedom to contract"],
+    "risk_level": "Low",
+    "negotiation_notes": "Standard provision protecting both parties' freedom not to proceed. Particularly important in preliminary discussions.",
+    "related_clauses": ["NDA-TERM-001", "NDA-MISC-001"]
+  },
+  {
+    "clause_id": "NDA-MISC-001",
+    "category": "Miscellaneous",
+    "title": "Entire Agreement",
+    "clause_text": "This Agreement constitutes the entire agreement between the parties with respect to the subject matter hereof and supersedes all prior agreements, understandings, negotiations, and discussions, whether oral or written, between the parties relating to such subject matter. This Agreement may not be amended except by a written instrument signed by both parties.",
+    "alternatives": [
+      "This Agreement, including any exhibits attached hereto, constitutes the complete and exclusive statement of the agreement between the parties concerning its subject matter and supersedes all prior oral or written agreements and understandings relating thereto. No modification, amendment, or waiver of any provision of this Agreement shall be effective unless in writing and signed by the party against whom such modification, amendment, or waiver is to be enforced.",
+      "This Agreement contains the entire understanding of the parties with respect to its subject matter and supersedes all prior and contemporaneous agreements and understandings, whether oral or written. This Agreement may only be modified by a written amendment signed by both parties."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["entire agreement", "integration clause", "merger clause", "amendment"],
+    "risk_level": "Low",
+    "negotiation_notes": "Standard boilerplate. Ensures no reliance on prior statements. Consider whether any exhibits or schedules should be incorporated.",
+    "related_clauses": ["NDA-MISC-002", "NDA-MISC-007"]
+  },
+  {
+    "clause_id": "NDA-MISC-002",
+    "category": "Miscellaneous",
+    "title": "Governing Law",
+    "clause_text": "This Agreement shall be governed by and construed in accordance with the laws of the State of [STATE/JURISDICTION], without regard to its conflict of law provisions.",
+    "alternatives": [
+      "This Agreement shall be governed by and interpreted in accordance with the laws of [COUNTRY/STATE], excluding its principles of conflicts of laws.",
+      "The validity, interpretation, and performance of this Agreement shall be governed by the substantive laws of [JURISDICTION], without giving effect to the principles of conflict of laws thereof.",
+      "This Agreement and any dispute arising hereunder shall be governed by the laws of [JURISDICTION] and the parties hereby submit to the exclusive jurisdiction of the courts of [JURISDICTION]."
+    ],
+    "jurisdiction": "Variable",
+    "practice_area": "Corporate",
+    "tags": ["governing law", "choice of law", "jurisdiction"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Critical provision. Choose jurisdiction familiar to you or neutral. Consider whether to exclude conflict of laws principles. May want separate clause for dispute resolution forum.",
+    "related_clauses": ["NDA-MISC-003", "NDA-MISC-006"]
+  },
+  {
+    "clause_id": "NDA-MISC-003",
+    "category": "Miscellaneous",
+    "title": "Jurisdiction and Venue",
+    "clause_text": "Each party irrevocably submits to the exclusive jurisdiction of the state and federal courts located in [CITY, STATE] for the purposes of any suit, action, or other proceeding arising out of or relating to this Agreement, and agrees to commence any such action, suit, or proceeding only in such courts. Each party further agrees that service of any process, summons, notice, or document by U.S. registered mail to such party's respective address set forth above shall be effective service of process for any action, suit, or proceeding in [STATE] with respect to any matters to which it has submitted to jurisdiction as set forth above.",
+    "alternatives": [
+      "The parties agree that any legal action or proceeding arising out of or relating to this Agreement shall be instituted in the courts of [JURISDICTION], and each party irrevocably submits to the exclusive jurisdiction of such courts in any such action or proceeding and waives any objection to venue laid therein.",
+      "Any disputes arising under or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts of [CITY/REGION], and each party hereby irrevocably waives any objection to such venue."
+    ],
+    "jurisdiction": "Variable",
+    "practice_area": "Corporate",
+    "tags": ["jurisdiction", "venue", "forum selection", "dispute resolution"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Often heavily negotiated. Consider convenience, favorable law, and enforceability. May want arbitration instead of litigation.",
+    "related_clauses": ["NDA-MISC-002", "NDA-MISC-006"]
+  },
+  {
+    "clause_id": "NDA-MISC-004",
+    "category": "Miscellaneous",
+    "title": "Waiver of Jury Trial",
+    "clause_text": "EACH PARTY HEREBY IRREVOCABLY WAIVES ALL RIGHT TO TRIAL BY JURY IN ANY ACTION, PROCEEDING, OR COUNTERCLAIM ARISING OUT OF OR RELATING TO THIS AGREEMENT.",
+    "alternatives": [
+      "TO THE EXTENT PERMITTED BY LAW, THE PARTIES HEREBY WAIVE THEIR RESPECTIVE RIGHTS TO A JURY TRIAL OF ANY CLAIM OR CAUSE OF ACTION BASED UPON OR ARISING OUT OF THIS AGREEMENT OR ANY DEALINGS BETWEEN THEM RELATING TO THE SUBJECT MATTER OF THIS AGREEMENT.",
+      "Each party hereby knowingly, voluntarily, and intentionally waives the right either of them may have to a trial by jury in any litigation based upon or arising out of this Agreement or any related instrument or agreement or any of the transactions contemplated by this Agreement or any course of conduct, dealing, statements (whether oral or written), or actions of either of them."
+    ],
+    "jurisdiction": "United States",
+    "practice_area": "Corporate",
+    "tags": ["jury waiver", "trial", "litigation", "dispute resolution"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Common in commercial agreements. May not be enforceable in all jurisdictions. Consider whether both parties want this or if one side benefits more.",
+    "related_clauses": ["NDA-MISC-003", "NDA-REM-001"]
+  },
+  {
+    "clause_id": "NDA-MISC-005",
+    "category": "Miscellaneous",
+    "title": "Counterparts and Electronic Signatures",
+    "clause_text": "This Agreement may be executed in counterparts, each of which shall be deemed an original and all of which together shall constitute one and the same instrument. Electronic signatures and facsimile signatures shall have the same force and effect as original signatures.",
+    "alternatives": [
+      "This Agreement may be executed in any number of counterparts, and by different parties in separate counterparts, each of which when executed shall be deemed to be an original, and all of which taken together shall constitute one and the same agreement. Delivery of an executed counterpart of this Agreement by facsimile or electronic transmission (including PDF) shall be equally as effective as delivery of a manually executed counterpart.",
+      "This Agreement may be signed in counterparts, each of which shall be an original, with the same effect as if the signatures were upon the same instrument. Execution and delivery of this Agreement may be evidenced by facsimile or electronic transmission."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["counterparts", "execution", "electronic signature", "e-sign"],
+    "risk_level": "Low",
+    "negotiation_notes": "Standard provision. Verify compliance with local e-signature laws (e.g., ESIGN Act, UETA in US). Important for remote execution.",
+    "related_clauses": ["NDA-MISC-001", "NDA-MISC-007"]
+  },
+  {
+    "clause_id": "NDA-MISC-006",
+    "category": "Miscellaneous",
+    "title": "Severability",
+    "clause_text": "If any provision of this Agreement is held to be invalid, illegal, or unenforceable, the validity, legality, and enforceability of the remaining provisions shall not in any way be affected or impaired thereby, and such provision shall be reformed and construed so as to most nearly approximate the intent of the parties as expressed herein to the extent permitted by law.",
+    "alternatives": [
+      "In the event that any provision of this Agreement is determined to be invalid or unenforceable, such provision shall be deemed deleted from this Agreement and the remainder of this Agreement shall continue in full force and effect.",
+      "If any term or provision of this Agreement is found to be void, invalid, or unenforceable, the parties agree that a court or arbitrator shall reform such provision to be valid and enforceable to the maximum extent permissible under applicable law, and the remainder of this Agreement shall remain in full force and effect."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["severability", "savings clause", "enforceability"],
+    "risk_level": "Low",
+    "negotiation_notes": "Standard boilerplate. Protects agreement from being entirely invalidated. Consider whether reformation is appropriate or just deletion.",
+    "related_clauses": ["NDA-MISC-001", "NDA-MISC-002"]
+  },
+  {
+    "clause_id": "NDA-MISC-007",
+    "category": "Miscellaneous",
+    "title": "Waiver",
+    "clause_text": "No waiver of any provision of this Agreement shall be deemed or shall constitute a waiver of any other provision, nor shall any waiver constitute a continuing waiver. No waiver shall be binding unless executed in writing by the party making the waiver.",
+    "alternatives": [
+      "The failure of either party to enforce any provision of this Agreement shall not be construed as a waiver or limitation of that party's right to subsequently enforce and compel strict compliance with every provision of this Agreement. Any waiver must be in writing and signed by the party against whom the waiver is to be effective.",
+      "No delay or omission by either party in exercising any right or remedy under this Agreement shall operate as a waiver thereof or of any other right or remedy, nor shall any single or partial exercise of any right or remedy preclude any other or further exercise thereof or the exercise of any other right or remedy."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["waiver", "non-waiver", "enforcement"],
+    "risk_level": "Low",
+    "negotiation_notes": "Standard provision. Preserves rights even if not immediately enforced. Ensure waivers require writing to avoid disputes.",
+    "related_clauses": ["NDA-MISC-001", "NDA-REM-001"]
+  },
+  {
+    "clause_id": "NDA-MISC-008",
+    "category": "Miscellaneous",
+    "title": "Assignment",
+    "clause_text": "Neither party may assign this Agreement or any rights or obligations hereunder without the prior written consent of the other party, and any attempted assignment in violation of this provision shall be void. This Agreement shall be binding upon and inure to the benefit of the parties and their respective successors and permitted assigns.",
+    "alternatives": [
+      "This Agreement may not be assigned by either party without the prior written consent of the other party, except that either party may assign this Agreement to a successor in interest in connection with a merger, acquisition, or sale of all or substantially all of its assets. Subject to the foregoing, this Agreement shall be binding upon and inure to the benefit of the parties' successors and assigns.",
+      "Neither party shall assign, transfer, delegate, or otherwise dispose of, whether voluntarily or involuntarily, by operation of law or otherwise, this Agreement or any rights or obligations under this Agreement without the prior written consent of the other party. Any purported assignment, transfer, or delegation in violation of this section shall be null and void."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["assignment", "transfer", "successors", "change of control"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Consider whether to allow assignment in M&A scenarios. Acquirer may want freedom to assign. Address what happens to confidential information post-assignment.",
+    "related_clauses": ["NDA-MISC-001", "NDA-OBL-001"]
+  },
+  {
+    "clause_id": "NDA-MISC-009",
+    "category": "Miscellaneous",
+    "title": "Notices",
+    "clause_text": "All notices, requests, demands, and other communications required or permitted under this Agreement shall be in writing and shall be deemed to have been duly given: (a) when delivered personally; (b) when sent by confirmed facsimile or electronic mail; (c) one business day after deposit with a nationally recognized overnight courier; or (d) three business days after mailing by certified or registered mail, return receipt requested, postage prepaid, to the addresses set forth below or to such other address as either party may designate by written notice to the other party.",
+    "alternatives": [
+      "Any notice required or permitted to be given under this Agreement shall be in writing and shall be deemed effectively given: (i) upon personal delivery to the party to be notified; (ii) upon deposit with the postal service, if sent by certified or registered mail, return receipt requested; or (iii) one business day after deposit with a reputable overnight courier, specifying next day delivery. Notices shall be sent to the parties at the addresses specified in this Agreement or such other address as a party may specify by notice.",
+      "All communications under this Agreement shall be in writing and delivered by hand, sent by overnight courier, or sent by certified mail, return receipt requested, to the parties at their respective addresses as set forth herein. Notices shall be deemed given when received."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["notices", "communications", "delivery", "service"],
+    "risk_level": "Low",
+    "negotiation_notes": "Specify acceptable methods and when notice is deemed received. Include email as method for modern practice. Ensure addresses are accurate.",
+    "related_clauses": ["NDA-TERM-001", "NDA-MISC-001"]
+  },
+  {
+    "clause_id": "NDA-MISC-010",
+    "category": "Miscellaneous",
+    "title": "Relationship of Parties",
+    "clause_text": "Nothing contained in this Agreement shall be deemed or construed to create a partnership, joint venture, employer-employee, principal-agent, or similar relationship between the parties. Neither party has the authority to enter into any agreements or commitments on behalf of the other party.",
+    "alternatives": [
+      "The parties are independent contractors and this Agreement shall not be construed to create any partnership, joint venture, agency, franchise, sales representative, or employment relationship between them. Neither party has the authority to make or accept any offers or representations on behalf of the other party.",
+      "This Agreement does not create any agency, partnership, or joint venture relationship between the parties. Each party shall remain an independent contractor responsible for its own actions and neither party shall have the authority to bind the other or to incur obligations on behalf of the other party."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["independent contractor", "no partnership", "no agency", "relationship"],
+    "risk_level": "Low",
+    "negotiation_notes": "Important for tax and liability purposes. Clarifies parties are independent. May be particularly important for employment/benefits purposes.",
+    "related_clauses": ["NDA-MISC-001", "NDA-REM-002"]
+  },
+  {
+    "clause_id": "NDA-SPEC-001",
+    "category": "Special Provisions",
+    "title": "Non-Solicitation of Employees",
+    "clause_text": "During the term of this Agreement and for a period of [ONE (1) YEAR] following its termination, neither party shall, directly or indirectly, solicit, recruit, or hire any employee of the other party who has been involved in the discussions or evaluation of Confidential Information, without the prior written consent of such other party.",
+    "alternatives": [
+      "Each party agrees that during the term of this Agreement and for [TWO (2) YEARS] thereafter, it will not solicit for employment or hire any employee of the other party without the prior written consent of the other party, except through general solicitations not specifically targeted at the other party's employees.",
+      "Neither party shall, during the term and for [EIGHTEEN (18) MONTHS] after termination of this Agreement, directly or indirectly solicit, induce, or attempt to solicit or induce any employee, consultant, or contractor of the other party to terminate their relationship with such party or to work for or provide services to the soliciting party or any third party."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["non-solicitation", "employees", "non-compete", "restrictive covenant"],
+    "risk_level": "High",
+    "negotiation_notes": "May be controversial. Reasonableness depends on duration, scope, and jurisdiction. Some jurisdictions limit enforceability. Consider carve-outs for general advertising.",
+    "related_clauses": ["NDA-TERM-001", "NDA-MISC-002"]
+  },
+  {
+    "clause_id": "NDA-SPEC-002",
+    "category": "Special Provisions",
+    "title": "Standstill Provision",
+    "clause_text": "During the term of this Agreement and for a period of [TWO (2) YEARS] following its termination, the Receiving Party agrees that it will not, without the prior written consent of the Disclosing Party, directly or indirectly: (a) acquire or agree to acquire any securities or assets of the Disclosing Party; (b) make any proposal for any merger, business combination, or similar transaction involving the Disclosing Party; or (c) take any action to seek to control or influence the management, Board of Directors, or policies of the Disclosing Party.",
+    "alternatives": [
+      "The Receiving Party agrees that for [ONE (1) YEAR] from the date of this Agreement, it will not, directly or indirectly, make any offer or proposal regarding a business combination, acquisition, or similar transaction with the Disclosing Party, without the Disclosing Party's prior written consent.",
+      "Each party agrees that during the Standstill Period (defined as the period commencing on the date hereof and ending [EIGHTEEN (18) MONTHS] thereafter), it will not take any action to acquire beneficial ownership of any voting securities or assets of the other party or to effect or seek to effect any merger, business combination, recapitalization, or similar transaction involving the other party."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["standstill", "anti-takeover", "hostile acquisition", "freeze-out"],
+    "risk_level": "Critical",
+    "negotiation_notes": "Highly sensitive in M&A contexts. Target companies want long standstills; acquirers want short or none. Consider public vs. private company context and fiduciary duty issues.",
+    "related_clauses": ["NDA-TERM-001", "NDA-OWN-002"]
+  },
+  {
+    "clause_id": "NDA-SPEC-003",
+    "category": "Special Provisions",
+    "title": "Publicity and Announcements",
+    "clause_text": "Neither party shall make any public announcement or disclosure regarding the existence of this Agreement or the discussions between the parties without the prior written consent of the other party, except as may be required by applicable law or regulation.",
+    "alternatives": [
+      "The parties agree that the existence and terms of this Agreement and any negotiations between the parties are confidential and neither party shall issue any press release or public statement regarding the same without the prior written approval of the other party, except as required by law.",
+      "Each party agrees to keep confidential the fact that Confidential Information has been disclosed, that discussions are taking place between the parties, and the terms of this Agreement. Neither party shall make any public statement or press release concerning this Agreement without the prior written consent of the other party."
+    ],
+    "jurisdiction": "Universal",
+    "practice_area": "Corporate",
+    "tags": ["publicity", "announcement", "press release", "disclosure"],
+    "risk_level": "Medium",
+    "negotiation_notes": "Important for public companies and competitive situations. Consider whether existence of discussions itself is confidential. Address SEC/regulatory disclosure requirements for public companies.",
+    "related_clauses": ["NDA-DEF-001", "NDA-DISC-001"]
+  },
+  {
+    "clause_id": "NDA-SPEC-004",
+    "category": "Special Provisions",
+    "title": "Export Control Compliance",
+    "clause_text": "The Receiving Party acknowledges that certain Confidential Information may be subject to export control laws and regulations, including the Export Administration Regulations (EAR) and the International Traffic in Arms Regulations (ITAR). The Receiving Party agrees to comply with all applicable export control laws and regulations and shall not export, re-export, or transfer any Confidential Information except in compliance with such laws and regulations.",
+    "alternatives": [
+      "Each party acknowledges that information exchanged under this Agreement may be subject to export controls under U.S. and foreign laws. Each party agrees to comply with all applicable export control laws and regulations, including obtaining any required licenses or authorizations prior to exporting, re-exporting, or transferring any controlled information or technology.",
+      "The parties acknowledge that technical data and technology disclosed hereunder may be subject to export controls. Each party shall comply with all applicable export laws and regulations and shall not export or re-export any Confidential Information in violation of such laws."
+    ],
+    "jurisdiction": "United States / International",
+    "practice_area": "Corporate / Technology",
+    "tags": ["export control", "ITAR", "EAR", "compliance", "international"],
+    "risk_level": "High",
+    "negotiation_notes": "Critical for technology companies and defense contractors. Ensure compliance with EAR, ITAR, OFAC, and foreign export regulations. May require license for certain disclosures.",
+    "related_clauses": ["NDA-OBL-001", "NDA-MISC-002"]
+  },
+  {
+    "clause_id": "NDA-SPEC-005",
+    "category": "Special Provisions",
+    "title": "Data Privacy and GDPR Compliance",
+    "clause_text": "To the extent that any Confidential Information includes personal data (as defined under applicable data protection laws, including the General Data Protection Regulation), each party agrees to comply with all applicable data protection and privacy laws, including implementing appropriate technical and organizational measures to protect such personal data. The parties shall enter into a separate data processing agreement if required by applicable law.",
+    "alternatives": [
+      "If Confidential Information contains personal data subject to the GDPR, CCPA, or other data protection laws, the Receiving Party shall process such data only in accordance with the Disclosing Party's instructions and applicable law. The Receiving Party shall implement appropriate security measures and shall notify the Disclosing Party of any data breach without undue delay.",
+      "Each party acknowledges that Confidential Information may include personal information subject to privacy laws. Each party agrees to handle such information in compliance with all applicable privacy and data protection laws, including but not limited to the GDPR, and to implement appropriate safeguards to protect such information."
+    ],
+    "jurisdiction": "European Union / Universal",
+    "practice_area": "Corporate / Privacy",
+    "tags": ["GDPR", "data privacy", "personal data", "data protection", "CCPA"],
+    "risk_level": "Critical",
+    "negotiation_notes": "Essential when dealing with personal data, especially EU data. May require separate DPA. Address data breach notification, data subject rights, and cross-border transfers.",
+    "related_clauses": ["NDA-OBL-001", "NDA-DISC-001"]
+  }
+]
