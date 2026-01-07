@@ -23,7 +23,6 @@ import Header from './components/Header/Header';
 import LegalContracts from './pages/LegalContracts';
 import { legalAPI } from './services/api';
 import { 
-  loadChatsFromStorage, 
   saveChatsToStorage, 
   createNewChat,
   generateChatTitle,
