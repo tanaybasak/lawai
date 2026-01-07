@@ -1,0 +1,293 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.sidebar {
+  position: fixed;
+  left: $sidebar-width-desktop;
+  top: 0;
+  bottom: 0;
+  width: 280px;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  @include flex-column;
+  transform: translateX(-100%);
+  transition: transform $transition-base, background-color $transition-base, border-color $transition-base;
+  z-index: $z-dropdown;
+  box-shadow: 2px 0 8px var(--shadow);
+
+  @include tablet {
+    left: $sidebar-width-mobile;
+  }
+
+  @include mobile {
+    left: 0;
+    width: 280px;
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.1);
+  }
+
+  &.open {
+    transform: translateX(0);
+  }
+}
+
+.sidebarHeader {
+  padding: $spacing-lg;
+  border-bottom: 1px solid var(--border-color);
+  transition: border-color $transition-base;
+}
+
+.newChatBtn {
+  width: 100%;
+  padding: $spacing-md $spacing-lg;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  border-radius: $radius-md;
+  font-size: 15px;
+  font-weight: 600;
+  @include interactive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.chatList {
+  flex: 1;
+  overflow-y: auto;
+  padding: $spacing-sm;
+  @include custom-scrollbar;
+}
+
+.emptyState {
+  padding: $spacing-4xl $spacing-xl;
+  text-align: center;
+  color: var(--text-secondary);
+  transition: color $transition-base;
+
+  p {
+    margin: $spacing-sm 0;
+  }
+}
+
+.emptyHint {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  transition: color $transition-base;
+}
+
+.chatItem {
+  padding: $spacing-md;
+  margin-bottom: $spacing-sm;
+  border-radius: $radius-md;
+  @include interactive;
+  background: var(--bg-tertiary);
+  border: 1px solid transparent;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: var(--hover-bg);
+    border-color: var(--border-color);
+
+    .chatActions {
+      opacity: 1;
+    }
+  }
+
+  &.active {
+    background: var(--hover-bg);
+    border-color: #10b981;
+
+    .chatIcon {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    }
+  }
+}
+
+.chatItemContent {
+  display: flex;
+  gap: $spacing-md;
+  align-items: flex-start;
+  position: relative;
+}
+
+.chatIcon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: $radius-md;
+  @include flex-center;
+  color: white;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.chatDetails {
+  flex: 1;
+  min-width: 0;
+  padding-right: 24px;
+}
+
+.chatTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: $spacing-xs;
+  @include text-truncate;
+  transition: color $transition-base;
+}
+
+.chatPreview {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  @include text-truncate;
+  line-height: 1.4;
+  transition: color $transition-base;
+}
+
+.chatMeta {
+  @include flex-between;
+  gap: $spacing-sm;
+}
+
+.chatDate {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  transition: color $transition-base;
+}
+
+.messageCount {
+  font-size: 10px;
+  color: #10b981;
+  background: #f0fdf4;
+  padding: 2px $spacing-sm;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.chatActions {
+  position: absolute;
+  right: $spacing-sm;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: $spacing-xs;
+  opacity: 0;
+  transition: opacity $transition-fast;
+}
+
+.renameBtn,
+.deleteBtn {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: #9ca3af;
+  @include interactive;
+  @include flex-center;
+
+  @include mobile {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.renameBtn:hover {
+  background: #dbeafe;
+  color: #3b82f6;
+}
+
+.deleteBtn {
+  &:hover {
+    background: #fee2e2;
+    color: #ef4444;
+  }
+
+  &.confirm {
+    background: #ef4444;
+    color: white;
+    opacity: 1;
+    animation: pulse 0.5s ease-in-out;
+  }
+}
+
+.chatTitleEdit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: $spacing-xs;
+}
+
+.titleInput {
+  flex: 1;
+  padding: $spacing-xs $spacing-sm;
+  border: 1px solid #10b981;
+  border-radius: $spacing-xs;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.renameConfirmBtn,
+.renameCancelBtn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: $spacing-xs;
+  @include interactive;
+  @include flex-center;
+  font-size: 12px;
+}
+
+.renameConfirmBtn {
+  background: #10b981;
+  color: white;
+
+  &:hover {
+    background: #059669;
+  }
+}
+
+.renameCancelBtn {
+  background: #e5e7eb;
+  color: #6b7280;
+
+  &:hover {
+    background: #d1d5db;
+    color: #374151;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.1);
+  }
+}
+
+.sidebarFooter {
+  padding: $spacing-md $spacing-lg;
+  border-top: 1px solid #e5e5e5;
+  background: #f9fafb;
+}
+
+.chatCount {
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+}

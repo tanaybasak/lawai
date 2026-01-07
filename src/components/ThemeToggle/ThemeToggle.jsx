@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { useTheme } from '../../context/ThemeContext';
-import styles from './ThemeToggle.module.css';
+import styles from './ThemeToggle.module.scss';
 
 const ThemeToggle = () => {
   const { t } = useTranslation();

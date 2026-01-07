@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faTrash, faMessage, faPen, faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
-import styles from './Sidebar.module.css';
+import styles from './Sidebar.module.scss';
 import { formatChatDate } from '../../utils/chatUtils';
 
 const Sidebar = ({ chats, activeChatId, onSelectChat, onNewChat, onDeleteChat, onRenameChat, isOpen, onToggle }) => {

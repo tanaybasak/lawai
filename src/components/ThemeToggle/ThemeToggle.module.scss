@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.themeToggle {
+  background: none;
+  border: none;
+  @include interactive;
+  @include flex-center;
+  padding: $spacing-sm;
+  color: var(--text-primary);
+  font-size: 18px;
+  border-radius: $radius-md;
+  transition: all $transition-base;
+
+  @include mobile {
+    font-size: 20px;
+    padding: $spacing-md;
+  }
+
+  &:hover {
+    background: var(--hover-bg);
+  }
+}
+
+.icon {
+  transition: transform $transition-base;
+
+  .themeToggle:hover & {
+    transform: rotate(15deg) scale(1.1);
+  }
+}
