@@ -40,7 +40,7 @@ class Settings(BaseSettings):
     TEMPERATURE: float = 0.1
 
     # Vector Store
-    VECTOR_STORE_PATH: str = "./data/combined/vector_store"
+    VECTOR_STORE_PATH: str = "./data/ipc/vector_store"
 
     # Document Processing
     CHUNK_SIZE: int = 1000
