@@ -176,27 +176,58 @@ class IPCVectorStore:
 
 
 def main():
-    """Main execution"""
+    """Main execution - builds combined IPC + CrPC vector store"""
     import argparse
     
-    parser = argparse.ArgumentParser(description="Build RAG vector store for IPC")
+    parser = argparse.ArgumentParser(description="Build RAG vector store for IPC and CrPC")
     parser.add_argument("--split", action="store_true", help="Split documents into chunks")
     parser.add_argument("--chunk-size", type=int, default=1000, help="Chunk size for splitting")
     parser.add_argument("--test-query", type=str, help="Test query to run after building")
     args = parser.parse_args()
     
     # Paths
-    json_path = Path(__file__).parent.parent / "data" / "ipc" / "ipc_sections.json"
-    vector_store_path = Path(__file__).parent.parent / "data" / "ipc" / "vector_store"
+    ipc_json_path = Path(__file__).parent.parent / "data" / "ipc" / "ipc_sections.json"
+    crpc_json_path = Path(__file__).parent.parent / "data" / "crpc" / "crpc_sections.json"
+    combined_vector_store_path = Path(__file__).parent.parent / "data" / "combined" / "vector_store"
     
-    # Build vector store
+    print("🚀 Building combined IPC + CrPC vector store...\n")
+    
+    # Build IPC vector store
+    print("=" * 60)
+    print("📚 Processing IPC (Indian Penal Code)")
+    print("=" * 60)
     rag = IPCVectorStore()
-    rag.build_from_json(
-        str(json_path),
-        str(vector_store_path),
-        split_chunks=args.split,
-        chunk_size=args.chunk_size
-    )
+    ipc_sections = rag.load_sections_from_json(str(ipc_json_path))
+    ipc_documents = rag.create_documents(ipc_sections)
+    
+    if args.split:
+        ipc_documents = rag.split_documents(ipc_documents, chunk_size=args.chunk_size)
+    
+    # Build CrPC vector store
+    print("\n" + "=" * 60)
+    print("📚 Processing CrPC (Code of Criminal Procedure)")
+    print("=" * 60)
+    crpc_sections = rag.load_sections_from_json(str(crpc_json_path))
+    crpc_documents = rag.create_documents(crpc_sections)
+    
+    if args.split:
+        crpc_documents = rag.split_documents(crpc_documents, chunk_size=args.chunk_size)
+    
+    # Combine all documents
+    print("\n" + "=" * 60)
+    print("🔗 Combining IPC + CrPC documents")
+    print("=" * 60)
+    all_documents = ipc_documents + crpc_documents
+    print(f"📊 Total documents: {len(all_documents)} (IPC: {len(ipc_documents)}, CrPC: {len(crpc_documents)})")
+    
+    # Create combined vector store
+    print("\n" + "=" * 60)
+    print("🔢 Creating combined vector store")
+    print("=" * 60)
+    rag.create_vector_store(all_documents)
+    
+    # Save combined vector store
+    rag.save_vector_store(str(combined_vector_store_path))
     
     # Test query
     if args.test_query:
@@ -205,11 +236,11 @@ def main():
         
         print("\n📋 Top 3 Results:")
         for i, (doc, score) in enumerate(results, 1):
-            print(f"\n{i}. Section {doc.metadata['section']}: {doc.metadata['title']}")
+            print(f"\n{i}. [{doc.metadata.get('law', 'N/A')}] Section {doc.metadata['section']}: {doc.metadata['title']}")
             print(f"   Score: {score:.4f}")
             print(f"   Content: {doc.page_content[:200]}...")
     
-    print(f"\n✅ Done! Vector store saved to: {vector_store_path}")
+    print(f"\n✅ Done! Combined vector store saved to: {combined_vector_store_path}")
 
 
 if __name__ == "__main__":
