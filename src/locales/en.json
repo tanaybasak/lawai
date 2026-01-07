@@ -1,0 +1,69 @@
+{
+  "app": {
+    "title": "LawAI Assistant",
+    "logo_alt": "LawAI Logo"
+  },
+  "sidebar": {
+    "paraphraser": "Paraphraser",
+    "grammar_checker": "Grammar Checker",
+    "ai_detector": "AI Detector",
+    "plagiarism_checker": "Plagiarism Checker",
+    "ai_humanizer": "AI Humanizer",
+    "legal_ai_chat": "Legal AI Chat",
+    "ai_image_generator": "AI Image Generator",
+    "translate": "Translate",
+    "summarizer": "Summarizer",
+    "more": "More",
+    "chrome_extension": "LawAI for Chrome"
+  },
+  "chat": {
+    "new_chat": "New Chat",
+    "no_chats": "No chats yet",
+    "start_conversation": "Start a new conversation",
+    "no_messages": "No messages yet",
+    "just_now": "Just now",
+    "minutes_ago": "{{count}}m ago",
+    "hours_ago": "{{count}}h ago",
+    "days_ago": "{{count}}d ago",
+    "messages": "{{count}} message",
+    "messages_plural": "{{count}} messages",
+    "chats": "{{count}} chat",
+    "chats_plural": "{{count}} chats",
+    "delete_confirm": "Click again to confirm",
+    "delete_chat": "Delete chat"
+  },
+  "input": {
+    "placeholder": "Ask your legal question...",
+    "legal_assistant": "Legal Assistant",
+    "loading": "Loading...",
+    "send": "Send"
+  },
+  "messages": {
+    "legal_assistant": "Legal Assistant",
+    "system": "System",
+    "working": "is working on ideas...",
+    "error_backend": "Sorry, I encountered an error. Please make sure the backend server is running.",
+    "error_request": "Error processing your request. Please try again."
+  },
+  "empty_state": {
+    "title": "Law AI at your service",
+    "subtitle": "AI-powered legal assistant for research, drafting, and insights. Let's build something amazing!",
+    "use_cases": "GET STARTED WITH A USE CASE:",
+    "draft_contracts": "Draft legal contracts",
+    "research_law": "Research case law",
+    "analyze_documents": "Analyze legal documents",
+    "review_compliance": "Review compliance requirements"
+  },
+  "warnings": {
+    "backend_disconnected": "⚠️ Backend server is not connected. Please start the server."
+  },
+  "header": {
+    "menu": "Menu",
+    "new_chat": "New Chat"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  }
+}

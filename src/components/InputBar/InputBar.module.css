@@ -1,0 +1,122 @@
+.input-container {
+  position: fixed;
+  bottom: 0;
+  left: 80px;
+  right: 0;
+  background-color: var(--bg-secondary);
+  padding: 8px 20px 24px;
+  border-top: 1px solid var(--border-color);
+  z-index: 100;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--bg-tertiary);
+  border-radius: 24px;
+  padding: 8px 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+.agents-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.agent-avatars {
+  display: flex;
+  margin-right: 4px;
+}
+
+.agent-avatar-small {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -8px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agent-avatar-small:first-child {
+  margin-left: 0;
+}
+
+.agent-avatar-small.legal {
+  background: #ffffff;
+  padding: 3px;
+  border: 1px solid #e5e5e5;
+}
+
+.agent-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.agent-avatar-small.strategist {
+  background-color: #5ac8fa;
+}
+
+.agent-avatar-small.designer {
+  background-color: #ffcc99;
+}
+
+.agent-avatar-small.writer {
+  background-color: #b39ddb;
+}
+
+.active-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.dropdown-icon {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  transition: color 0.3s ease;
+}
+
+.input-field {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  outline: none;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: var(--text-tertiary);
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button:hover {
+  opacity: 0.7;
+}
