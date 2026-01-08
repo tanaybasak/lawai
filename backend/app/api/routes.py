@@ -7,7 +7,9 @@ from app.models.schemas import (
     QueryResponse,
     HealthResponse,
     ReloadResponse,
-    LegalSourcesResponse
+    LegalSourcesResponse,
+    AgreementRequest,
+    AgreementResponse
 )
 from app.core.config import settings
 import logging
@@ -143,3 +145,40 @@ async def get_legal_sources():
         sources=settings.LEGAL_SOURCES,
         success=True
     )
+
+
+@router.post("/generate-agreement", response_model=AgreementResponse)
+async def generate_agreement(agreement_request: AgreementRequest, request: Request):
+    """Generate a legal agreement (NDA, MSA, etc.)"""
+    try:
+        assistant_service = request.app.state.assistant_service
+        
+        if not assistant_service.is_ready():
+            raise HTTPException(
+                status_code=500,
+                detail="Assistant service not initialized"
+            )
+        
+        logger.info(f"Generating {agreement_request.agreement_type} agreement (mutual: {agreement_request.is_mutual})")
+        
+        result = await assistant_service.generate_agreement(
+            agreement_type=agreement_request.agreement_type,
+            requirements=agreement_request.requirements,
+            is_mutual=agreement_request.is_mutual
+        )
+        
+        return AgreementResponse(
+            agreement_type=result["agreement_type"],
+            document=result["document"],
+            clauses_used=result["clauses_used"],
+            sources=result.get("sources", result["clauses_used"]),  # Use sources or fallback to clauses_used
+            success=True
+        )
+        
+    except Exception as e:
+        logger.error(f"Error generating agreement: {str(e)}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error generating agreement: {str(e)}"
+        )
+
